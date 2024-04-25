@@ -9,6 +9,7 @@ public class CrabMovement : MonoBehaviour
     // Start is called before the first frame update
     public int moveSpeed = 5;
     bool goLeft;   // flag for the direction crab is currently travelling 
+    Vector3 dir;  // direction to travel
     
     // far left: x = -905, far right: x = -886
 
@@ -20,35 +21,30 @@ public class CrabMovement : MonoBehaviour
         int startingX = rnd.Next(-886, -905);
         transform.position = new Vector3(startingX, transform.position.y, 0);
 
-        if (rnd.Next(0, 2) == 1)    // generate random num between 0 and 1
-        {
-            goLeft = false;
-        }
+       // if (rnd.Next(0, 2) == 1)    // generate random num between 0 and 1
+      //  {
+            dir = Vector3.right;
+      //  }
+      //  else
+     //   {
+       //     dir = Vector3.left;
+    //    }
+
+      //  print("goLeft value: " + goLeft.ToString());
     }
 
     void Update()
     {
-        //while (2 > 1) {   // fix this 
-            if (goLeft)
-            {
-                while (transform.position.x >= -905)
-                {
-                    transform.position = transform.position - (Vector3.left * moveSpeed) * Time.deltaTime;
-                }
-                goLeft = false;
+        transform.Translate(dir * Time.deltaTime * moveSpeed);
 
-            }
-            else
-            {
-                while (transform.position.x <= -886)
-                {
-                    transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
-                }
-                goLeft = true;
-            }
-            //randomly pick either go left or right
-            // follow that until it reaches far end x coordinate, then flip direction around and repeat
-        //}
+        if (transform.position.x <= -905)
+        {
+            dir = Vector3.left;
+        }
+        else if (transform.position.x >= -886)
+        {
+            dir = Vector3.right;
+        }
 
     }
 }
