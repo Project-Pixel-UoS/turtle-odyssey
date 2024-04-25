@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TurtleMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 0.5f;
 
     void Start()
     {
