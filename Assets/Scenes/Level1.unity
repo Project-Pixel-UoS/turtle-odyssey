@@ -907,7 +907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2b40b44179348fc8cd08b51f0906ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  swipeThreshold: 10
+  swipeThreshold: 50
 --- !u!4 &1744937752 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
@@ -1017,11 +1017,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8435906295152982410, guid: 8c5b64f1ae1c3e64fa576702503d18dc, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8435906295152982410, guid: 8c5b64f1ae1c3e64fa576702503d18dc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 8435906295152982410, guid: 8c5b64f1ae1c3e64fa576702503d18dc, type: 3}
       propertyPath: m_LocalPosition.x
