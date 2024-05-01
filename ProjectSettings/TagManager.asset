@@ -13,7 +13,7 @@ TagManager:
   - Water
   - UI
   - Background
-  - 
+  - Entity
   - 
   - 
   - 
@@ -47,4 +47,7 @@ TagManager:
     locked: 0
   - name: Turtle
     uniqueID: 2479473251
+    locked: 0
+  - name: On beach
+    uniqueID: 4220162089
     locked: 0
