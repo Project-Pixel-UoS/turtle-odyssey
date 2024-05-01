@@ -8,6 +8,7 @@ public class TurtleMovement : MonoBehaviour
 
     void Start()
     {
+
         SwipeManager.OnSwipe += HandleSwipe;
     }
 
@@ -21,5 +22,15 @@ public class TurtleMovement : MonoBehaviour
         float moveY = swipeDirection.y;
 
         transform.Translate(0f, moveY * moveSpeed * Time.deltaTime, 0f);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        LevelOver();
+    }
+
+    void LevelOver()
+    {
+        Time.timeScale = 0f;
     }
 }
