@@ -9,7 +9,7 @@ using UnityEngine;
 /// <remarks>
 /// Maintained by: Milan Zeki
 /// </remarks>
-public class ObstacleSpawnerScript : MonoBehaviour
+public class ObstacleSpawner : MonoBehaviour // Changed the name of the class from ObstacleSpawnerScript to ObstacleSpawner
 {
     public float moveSpeed = 0.75f;
     void Start()
