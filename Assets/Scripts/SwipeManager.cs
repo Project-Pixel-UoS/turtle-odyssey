@@ -7,7 +7,7 @@ public class SwipeManager : MonoBehaviour
     private Vector2 touchStartPos;
     private bool isSwiping = false;
 
-    public float swipeThreshold = 50f;
+    public float swipeThreshold = 80f;
 
     public static event System.Action<Vector2> OnSwipe;
 

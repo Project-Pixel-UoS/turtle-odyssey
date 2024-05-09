@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -12,7 +13,7 @@ TagManager:
   - Water
   - UI
   - Background
-  - Entity
+  - 
   - 
   - 
   - 
@@ -41,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: On beach
-    uniqueID: 4220162089
+  - name: Obstacle
+    uniqueID: 3543806385
+    locked: 0
+  - name: Turtle
+    uniqueID: 2479473251
     locked: 0
