@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 26619782}
   - component: {fileID: 26619784}
   - component: {fileID: 26619783}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: GameOverTxt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,9 +497,9 @@ GameObject:
   - component: {fileID: 337790533}
   - component: {fileID: 337790532}
   - component: {fileID: 337790531}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TimeTxt
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -512,17 +512,17 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337790529}
   m_LocalRotation: {x: -0, y: -0, z: 0.00018082651, w: -1}
-  m_LocalPosition: {x: 0, y: 0, z: 90.008545}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 0.008547008, y: 0.008547008, z: 0.008547009}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1183356851}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.021}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1266.24, y: -581.69}
-  m_SizeDelta: {x: 271.51, y: 87.52}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -1266.37, y: -1166.89}
+  m_SizeDelta: {x: 271.51, y: 87.52002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &337790531
 MonoBehaviour:
@@ -536,7 +536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f2669a3bd7aae488d6295cfd7284b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeRemaining: 70
+  TimeRemaining: 65
   TimerOn: 0
   TimerTxt: {fileID: 337790532}
 --- !u!114 &337790532
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_text: 01:05
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60f46e9bda250b04bbac5aa88caf6b69, type: 2}
-  m_sharedMaterial: {fileID: 463712474971586024, guid: 60f46e9bda250b04bbac5aa88caf6b69, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: d4ebe8e125bf0014c9811fcbd033da37, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -582,7 +582,7 @@ MonoBehaviour:
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
   m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
+  m_overrideHtmlColors: 1
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
@@ -635,7 +635,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337790529}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1001 &411734760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2272,7 +2272,7 @@ GameObject:
   - component: {fileID: 1032536313}
   - component: {fileID: 1032536314}
   - component: {fileID: 1032536315}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2287,7 +2287,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032536312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalPosition: {x: 0, y: 0, z: -0.8}
   m_LocalScale: {x: 0.008547009, y: 0.008547009, z: 0.008547009}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2379,7 +2379,7 @@ GameObject:
   - component: {fileID: 1073961936}
   - component: {fileID: 1073961938}
   - component: {fileID: 1073961937}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2403,7 +2403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.78, y: -0.0024852753}
+  m_AnchoredPosition: {x: 4.779999, y: -0.0024852753}
   m_SizeDelta: {x: 9.58, y: -0.0050354}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1073961937
@@ -4064,7 +4064,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &2124137846
 Canvas:
   m_ObjectHideFlags: 0
@@ -4074,7 +4074,7 @@ Canvas:
   m_GameObject: {fileID: 2124137843}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 2
   m_Camera: {fileID: 598815346}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -4083,7 +4083,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: -1
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -4096,8 +4096,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124137843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 90}
+  m_LocalScale: {x: 0.008547009, y: 0.008547009, z: 0.008547009}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1248173196}
@@ -4108,8 +4108,8 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 2531.9998, y: 1170}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2131593705
 GameObject:
   m_ObjectHideFlags: 0
@@ -4122,7 +4122,7 @@ GameObject:
   - component: {fileID: 2131593709}
   - component: {fileID: 2131593708}
   - component: {fileID: 2131593707}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Button
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -4147,7 +4147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 30.64, y: 156.65}
+  m_AnchoredPosition: {x: 30.639984, y: 156.65}
   m_SizeDelta: {x: -529.45, y: 61.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2131593707
