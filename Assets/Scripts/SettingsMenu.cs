@@ -11,7 +11,7 @@ public class SettingsMenu : MonoBehaviour
     /// Allow user to change volume of music and SFX using sliders.
     /// </summary>
     /// <remarks>
-    /// Maintained by: Iva Koleva
+    /// Maintained by: Iva Koleva and Abdallah Khorma
     /// </remarks>
 
     public AudioMixer SoundVolume;
