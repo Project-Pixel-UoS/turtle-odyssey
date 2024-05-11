@@ -37,4 +37,16 @@ public class SceneManagerScript : MonoBehaviour
             Application.Quit();
         #endif
     }
+
+    /// <summary>
+    /// Load the level selector scene once clicked on the start button
+    /// </summary>
+    /// <remarks>
+    /// Maintained by: Najaaz Nabhan
+    /// </remarks>
+    public void StartGame()
+    {
+        Debug.Log("Loading scene: LevelSelector");
+        SceneManager.LoadScene("LevelSelection");
+    }
 }
