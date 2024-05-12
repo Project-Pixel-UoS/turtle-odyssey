@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3203719105509675804}
   - component: {fileID: 6066704522159454623}
   - component: {fileID: 5591982848868904781}
+  - component: {fileID: 1954797083923415630}
   m_Layer: 5
   m_Name: Game UI
   m_TagString: Untagged
@@ -34,7 +35,7 @@ RectTransform:
   - {fileID: 3426790105542430719}
   - {fileID: 2127989806150045421}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -104,6 +105,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1954797083923415630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340663407903310628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc80c0935174e6644a35e405b02b086a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2672683066919543842
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,9 +412,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1954797083923415630}
         m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
-        m_MethodName: ReloadScene
+        m_MethodName: ReloadGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

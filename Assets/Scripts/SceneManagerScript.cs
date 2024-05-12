@@ -37,4 +37,11 @@ public class SceneManagerScript : MonoBehaviour
             Application.Quit();
         #endif
     }
+
+    public static void ReloadGame()
+    {
+        string name = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(name);
+        Time.timeScale = 1.0f;
+    }
 }
