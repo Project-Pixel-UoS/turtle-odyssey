@@ -19,6 +19,9 @@ public class ObstacleBehaviour : MonoBehaviour {
     }
 
     void Update() {
+        if (GameManager.Instance) {
+            moveSpeed = GameManager.Instance.moveSpeed;
+        }
         transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime;
         if (transform.localPosition.x < -(width/2 + leftEdge)) {
             Destroy(gameObject);

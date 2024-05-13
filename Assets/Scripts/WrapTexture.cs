@@ -29,6 +29,9 @@ public class WrapTexture : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance) {
+            moveSpeed = GameManager.Instance.moveSpeed;
+        }
         offset += (moveSpeed * Time.deltaTime)/transform.localScale.x;
         offset = Mathf.Repeat(offset, 1);
         material.mainTextureOffset = new Vector2(offset, 0);

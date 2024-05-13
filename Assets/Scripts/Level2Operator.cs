@@ -43,18 +43,13 @@ public class Level2Operator : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameOver();
+        GameManager.Instance.GameOver();
+        gameOver.SetActive(true);
         turtleMoves = false;
     }
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    void GameOver()
-    {
-        gameOver.SetActive(true);
-        Time.timeScale = 0f;
     }
 
 }

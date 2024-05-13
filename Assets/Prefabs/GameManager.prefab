@@ -63,6 +63,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  gameActive: 0
+  pauseMenu: {fileID: 0}
+  gameOverMenu: {fileID: 0}
 --- !u!114 &3383583330951545138
 MonoBehaviour:
   m_ObjectHideFlags: 0

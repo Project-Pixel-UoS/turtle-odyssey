@@ -8,6 +8,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public float moveSpeed;
+    public bool gameActive = true;
+    private float savedSpeed;
+    public GameObject gameButtons;
+    public GameObject gameOverMenu;
     private static GameManager _instance;
 
     /// <summary>
@@ -33,5 +37,31 @@ public class GameManager : MonoBehaviour
             Debug.Log("Replacing existing GameManager");
         }
         _instance = this;
+    }
+
+    void Start()
+    {
+        savedSpeed = moveSpeed;
+    }
+
+    public void GameOver()
+    {
+        gameActive = false;
+        gameOverMenu.SetActive(false);
+        gameButtons.SetActive(false);
+        Pause();
+
+        // Time.timeScale = 0f;
+    }
+
+    public void Pause()
+    {
+        savedSpeed = moveSpeed;
+        moveSpeed = 0;
+    }
+
+    public void Resume()
+    {
+        moveSpeed = savedSpeed;
     }
 }

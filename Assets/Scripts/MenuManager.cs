@@ -14,7 +14,6 @@ public class MenuManager : MonoBehaviour
 
     public void SwitchMenu(GameObject page)
     {
-        Debug.Log("Loading scene: LevelSelector");
         TransitionUI[] transitions = GetComponentsInChildren<TransitionUI>();
         TransitionUI targetPage = page.GetComponent<TransitionUI>();
         targetPage.TransitionIn();
@@ -25,6 +24,18 @@ public class MenuManager : MonoBehaviour
                 transition.TransitionOut();
             }
         }
+    }
+
+    public void SwitchMenuWithResume(GameObject page)
+    {
+        GameManager.Instance.Resume();
+        SwitchMenu(page);
+    }
+
+    public void SwitchMenuWithPause(GameObject page)
+    {
+        GameManager.Instance.Pause();
+        SwitchMenu(page);
     }
 
     void OnApplicationQuit()
