@@ -37,4 +37,23 @@ public class SceneManagerScript : MonoBehaviour
             Application.Quit();
         #endif
     }
+
+    public static void ReloadGame()
+    {
+        string name = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(name);
+        Time.timeScale = 1.0f;
+    }
+
+    /// <summary>
+    /// Load the level selector scene once clicked on the start button
+    /// </summary>
+    /// <remarks>
+    /// Maintained by: Najaaz Nabhan
+    /// </remarks>
+    public void StartGame()
+    {
+        Debug.Log("Loading scene: LevelSelector");
+        SceneManager.LoadScene("LevelSelection");
+    }
 }

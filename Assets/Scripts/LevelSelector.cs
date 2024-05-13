@@ -9,7 +9,7 @@ public class LevelSelector : MonoBehaviour
     /// Load the correct level scene based on what level the user wants.
     /// </summary>
     /// <remarks>
-    /// Maintained by: Milan Zeki
+    /// Maintained by: Milan Zeki and Abdallah Khorma
     /// </remarks>
     public void LoadScene()
     {
@@ -24,11 +24,8 @@ public class LevelSelector : MonoBehaviour
             case "Level3":
                 SceneManager.LoadScene(sceneName: "Level3");
                 break;
-            case "Level4":
-                SceneManager.LoadScene(sceneName: "Level4");
-                break;
-            case "Level5":
-                SceneManager.LoadScene(sceneName: "Level5");
+            case "Settings":
+                SceneManager.LoadScene(sceneName: "Settings");
                 break;
         }
     }

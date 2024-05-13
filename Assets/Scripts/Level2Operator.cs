@@ -23,7 +23,6 @@ public class Level2Operator : MonoBehaviour
         {
             transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
         }
-        
     }
 
     private void Start()
