@@ -5169,7 +5169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a241d2299dcf124dbc9b160635a9b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.1
+  moveSpeed: 0
   turtleMoves: 1
   gameOver: {fileID: 278855869}
   wellDone: {fileID: 278049072}
@@ -6650,6 +6650,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
+    - target: {fileID: 3326506112176419003, guid: 5afc0b9ca2c9e2f40b6dae4973a65c12, type: 3}
+      propertyPath: moveSpeed
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6146469902273032525, guid: 5afc0b9ca2c9e2f40b6dae4973a65c12, type: 3}
+      propertyPath: moveSpeed
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6683178510593241873, guid: 5afc0b9ca2c9e2f40b6dae4973a65c12, type: 3}
+      propertyPath: moveSpeed
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8630689655887614915, guid: 5afc0b9ca2c9e2f40b6dae4973a65c12, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -7204,7 +7216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6449621898273132763, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7584687376402018859, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_RootOrder
@@ -7216,7 +7228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7584687376402018859, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.56
+      value: -4.21
       objectReference: {fileID: 0}
     - target: {fileID: 7584687376402018859, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_LocalPosition.z
