@@ -133,19 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (10)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -194,10 +182,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1094350533}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &32802234
 PrefabInstance:
@@ -209,19 +194,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (17)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -270,10 +243,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 652504488}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1 &77263692
 GameObject:
@@ -325,58 +295,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &100708197 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 610044999}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &100708200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 610044999}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &100708203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100708197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
---- !u!1 &124046274 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1157853859}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &124046278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1157853859}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &124046280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124046274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!4 &169765851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
@@ -544,32 +472,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5afc0b9ca2c9e2f40b6dae4973a65c12, type: 3}
---- !u!1 &256413858 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 708643459}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &256413861 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 708643459}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &256413864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256413858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &279622616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -580,19 +487,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -641,37 +536,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1609432916}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
---- !u!1 &281376651 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 745382149}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &281376654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 745382149}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &281376657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281376651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!4 &318857301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
@@ -692,19 +563,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (16)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -753,10 +612,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 886930833}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &448912195
 PrefabInstance:
@@ -834,19 +690,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (15)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -895,42 +739,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 953266632}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!4 &490885707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
   m_PrefabInstance: {fileID: 448912195}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &492146810 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1782809911}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &492146813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1782809911}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &492146816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492146810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &522045520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1007,19 +827,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (18)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (22)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -1068,10 +876,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 100708203}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &651457074
 PrefabInstance:
@@ -1134,32 +939,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
---- !u!1 &652504482 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 32802234}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &652504486 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 32802234}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &652504488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 652504482}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &667734888
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1231,19 +1015,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (14)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -1292,10 +1064,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 974323253}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &708643459
 PrefabInstance:
@@ -1307,19 +1076,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (20)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -1368,10 +1125,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 256413864}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &745382149
 PrefabInstance:
@@ -1383,19 +1137,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (19)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -1444,10 +1186,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 281376657}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &801875353
 PrefabInstance:
@@ -1632,32 +1371,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
---- !u!1 &886930827 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 359337701}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &886930830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 359337701}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &886930833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 886930827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!4 &901116485 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
@@ -1673,19 +1391,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -1734,68 +1440,23 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1902130135}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!4 &936160365 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
   m_PrefabInstance: {fileID: 651457074}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &953266626 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 466096176}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &953266629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 466096176}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &953266632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953266626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
---- !u!1 &974323247 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 703304729}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &974323250 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 703304729}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &974323253
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974323247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &990462293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1806,19 +1467,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (5)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -1867,10 +1516,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1559896733}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!4 &1000905396 stripped
 Transform:
@@ -1938,63 +1584,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
---- !u!1 &1020900549 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1414844687}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1020900553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1414844687}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1020900555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020900549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!4 &1030043810 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
   m_PrefabInstance: {fileID: 522045520}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1043777930 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1698764691}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1043777933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1698764691}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1043777936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1043777930}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1 &1058269258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2054,32 +1658,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
   m_PrefabInstance: {fileID: 1964750879}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1077705966 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1799414496}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1077705969 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1799414496}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1077705972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077705966}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &1079378314
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2090,19 +1673,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (6)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -2151,37 +1722,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1490361937}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
---- !u!1 &1094350527 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 18879523}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1094350530 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 18879523}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1094350533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1094350527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &1095958971
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2258,19 +1805,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (21)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -2319,63 +1854,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 124046280}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
---- !u!1 &1172419129 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1610077742}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1172419132 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1610077742}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1172419135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172419129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
---- !u!1 &1200074716 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1938710945}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1200074719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1938710945}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1200074722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200074716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!4 &1204475327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
@@ -2503,80 +1993,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3dc74d713fba25b488f8fbbdbc02cc16, type: 3}
---- !u!1 &1388846347
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1388846351}
-  - component: {fileID: 1388846350}
-  - component: {fileID: 1388846349}
-  - component: {fileID: 1388846348}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: GameController
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1388846348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388846347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc80c0935174e6644a35e405b02b086a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1388846349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388846347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea4f595062f202944a06e625532e06bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
---- !u!114 &1388846350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388846347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1388846351
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1388846347}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1414844687
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2587,19 +2003,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (20)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (13)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -2648,10 +2052,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1020900555}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &1422911728
 PrefabInstance:
@@ -2663,19 +2064,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -2724,10 +2113,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2005154995}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &1440305959
 PrefabInstance:
@@ -2790,32 +2176,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
---- !u!1 &1462989972 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1993895159}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1462989975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1993895159}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1462989978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462989972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &1467642352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2877,63 +2242,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
---- !u!1 &1490361931 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1079378314}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1490361934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1079378314}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1490361937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490361931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!4 &1506386783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
   m_PrefabInstance: {fileID: 667734888}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1559896727 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 990462293}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1559896730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 990462293}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1559896733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559896727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &1579868662
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3080,32 +2403,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
---- !u!1 &1609432910 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 279622616}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1609432913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 279622616}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1609432916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609432910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &1610077742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3116,19 +2418,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (9)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -3177,10 +2467,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1172419135}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &1644670587
 PrefabInstance:
@@ -3324,19 +2611,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (12)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -3385,10 +2660,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1043777936}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &1719051956
 PrefabInstance:
@@ -3451,32 +2723,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
---- !u!1 &1733702979 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1807942992}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1733702982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1807942992}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1733702985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1733702979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &1782809911
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3487,19 +2738,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (18)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -3548,10 +2787,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 492146816}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &1791266315
 PrefabInstance:
@@ -3624,19 +2860,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (11)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -3685,10 +2909,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1077705972}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &1807942992
 PrefabInstance:
@@ -3700,19 +2921,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -3761,68 +2970,23 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1733702985}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
---- !u!1 &1902130129 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 904400581}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1902130132 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 904400581}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1902130135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902130129}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!4 &1908815569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
   m_PrefabInstance: {fileID: 1365748078}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1928239790 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 2056548316}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1928239793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 2056548316}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1928239796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928239790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &1938710945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3833,19 +2997,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (8)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -3894,10 +3046,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1200074722}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!1001 &1964750879
 PrefabInstance:
@@ -3960,6 +3109,67 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
+--- !u!1001 &1967355336
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5591195908291784447, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5733670703104593008, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
 --- !u!4 &1986360217 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8545962183644507864, guid: 9386a45ec64f77a43af8f2415a9c10df, type: 3}
@@ -3975,19 +3185,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (7)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -4036,37 +3234,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1462989978}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
---- !u!1 &2005154989 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-  m_PrefabInstance: {fileID: 1422911728}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2005154992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
   m_PrefabInstance: {fileID: 1422911728}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2005154995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005154989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &2031364125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4138,19 +3312,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_Name
-      value: sandcastle (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7705896203260605897, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -751160911
+      value: sandcastle (1)
       objectReference: {fileID: 0}
     - target: {fileID: 8032259749859885057, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
       propertyPath: m_RootOrder
@@ -4199,10 +3361,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6442186581405396796, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1928239796}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48825f76933281f4fb84d728976f72d1, type: 3}
 --- !u!4 &2116066971 stripped
 Transform:
