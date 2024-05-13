@@ -6,12 +6,12 @@ public class MenuManager : MonoBehaviour
 {
     public void Start()
     {
-        Debug.Log(PlayerPrefs.GetInt("fromLevel"));
         if (PlayerPrefs.GetInt("fromLevel") == 1)
         {
             SwitchMenu(GameObject.Find("LevelMenu"));
         }
     }
+
     public void SwitchMenu(GameObject page)
     {
         Debug.Log("Loading scene: LevelSelector");
@@ -25,5 +25,11 @@ public class MenuManager : MonoBehaviour
                 transition.TransitionOut();
             }
         }
+    }
+
+    void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteKey("fromLevel");
+        Debug.Log("Application ending after " + Time.time + " seconds");
     }
 }
