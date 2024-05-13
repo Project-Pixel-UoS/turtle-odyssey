@@ -13,7 +13,7 @@ using UnityEngine.UIElements;
 public class WrapTexture : MonoBehaviour
 {
     public float offset = 0;
-    public float moveSpeed = 5;
+    public float moveSpeed = 5.0f;
     private Material material;
 
     /// <summary>

@@ -385,8 +385,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fc80c0935174e6644a35e405b02b086a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
 --- !u!1001 &951325596
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -479,8 +479,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   moveSpeed: 5
   deadZone: -20
   leftEdge: 0
@@ -669,7 +669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8154806306022438476, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: gameOver
-      value: 
+      value:
       objectReference: {fileID: 278855869}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -796,7 +796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8863438156890096958, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
       propertyPath: m_FirstSelected
-      value: 
+      value:
       objectReference: {fileID: 1585476208}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -821,7 +821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2809888699005156770, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 886048848}
     - target: {fileID: 2809888699005156770, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -829,7 +829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3203719105509675804, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_Camera
-      value: 
+      value:
       objectReference: {fileID: 263448713}
     - target: {fileID: 3203719105509675804, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_RenderMode
