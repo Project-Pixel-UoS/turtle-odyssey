@@ -313,9 +313,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 178841517074549079, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 178841517074549079, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 340663407903310628, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_Name
       value: Game UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2516750048764378039, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2516750048764378039, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2516750048764378039, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3203719105509675804, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_Camera
@@ -405,11 +425,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6045269774092602116, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045269774092602116, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6045269774092602116, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585714192589743162, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585714192589743162, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+--- !u!1 &229094238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5077793918707505514, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+  m_PrefabInstance: {fileID: 229094237}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &230338433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2198,10 +2243,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 357805445230587525, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5945816876152151081, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_Size.x
       value: 3.2991328
@@ -3250,6 +3291,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: gameButtons
+      value: 
+      objectReference: {fileID: 229094238}
+    - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: gameOverMenu
+      value: 
+      objectReference: {fileID: 1654444159}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
