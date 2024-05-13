@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour
 {
+    public void Start()
+    {
+        Debug.Log(PlayerPrefs.GetInt("fromLevel"));
+        if (PlayerPrefs.GetInt("fromLevel") == 1)
+        {
+            SwitchMenu(GameObject.Find("LevelMenu"));
+        }
+    }
     public void SwitchMenu(GameObject page)
     {
         Debug.Log("Loading scene: LevelSelector");

@@ -18,7 +18,12 @@ public class SceneManagerScript : MonoBehaviour
     /// <param name="sceneName">scene must be added to build settings</param>
     public static void LoadScene(string sceneName)
     {
+        bool isLevel = SceneManager.GetActiveScene().name.StartsWith("Level");
+        if(isLevel) {
+            PlayerPrefs.SetInt("fromLevel", 1);
+        }
         SceneManager.LoadScene(sceneName);
+        Time.timeScale = 1.0f;
     }
 
     /// <summary>
@@ -27,6 +32,7 @@ public class SceneManagerScript : MonoBehaviour
     /// </summary>
     public static void QuitGame()
     {
+        PlayerPrefs.SetInt("fromLevel", 0);
         Debug.Log("Quitting Application");
         #if UNITY_EDITOR
             // Application.Quit() does not work in the editor so

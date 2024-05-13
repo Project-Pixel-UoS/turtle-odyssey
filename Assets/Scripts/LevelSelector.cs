@@ -13,6 +13,7 @@ public class LevelSelector : MonoBehaviour
     /// </remarks>
     public void LoadScene()
     {
+        PlayerPrefs.SetInt("fromLevel", 0);
         switch (gameObject.name)
         {
             case "Level1":

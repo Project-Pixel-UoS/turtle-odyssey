@@ -1476,9 +1476,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4d38bb21099d974ca86e94f495b7f1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundVolume: {fileID: 0}
-  VolumeSlider: {fileID: 0}
-  SfxSlider: {fileID: 0}
+  SoundVolume: {fileID: 24100000, guid: 2ae9d85e00386f3489b9dd6f5c31f1c2, type: 2}
+  VolumeSlider: {fileID: 841016299}
+  SfxSlider: {fileID: 1120512858}
 --- !u!114 &598164159
 MonoBehaviour:
   m_ObjectHideFlags: 0
