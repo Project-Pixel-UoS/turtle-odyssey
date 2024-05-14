@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameButtons;
     public GameObject gameOverMenu;
     private static GameManager _instance;
+    public AudioSource bgMusic;
 
     /// <summary>
     /// returns the GameManager
@@ -41,11 +42,13 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        bgMusic = GetComponent<AudioSource>();
         savedSpeed = moveSpeed;
     }
 
     public void GameOver()
     {
+        bgMusic.Stop();
         gameActive = false;
         gameOverMenu.SetActive(false);
         gameButtons.SetActive(false);

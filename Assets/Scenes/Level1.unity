@@ -4658,6 +4658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WellDoneTxt
       objectReference: {fileID: 0}
+    - target: {fileID: 6621085151311363300, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 254.21002
+      objectReference: {fileID: 0}
     - target: {fileID: 6706287755285294638, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -214.5
