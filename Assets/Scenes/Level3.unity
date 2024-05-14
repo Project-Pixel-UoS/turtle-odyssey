@@ -437,6 +437,18 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7219139814278015514, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1954797083923415630, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+    - target: {fileID: 7219139814278015514, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 7219139814278015514, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: MainMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 8585714192589743162, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2243,6 +2255,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1459724628964595951, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 1376894012}
     - target: {fileID: 5945816876152151081, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_Size.x
       value: 3.2991328

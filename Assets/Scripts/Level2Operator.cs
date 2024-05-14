@@ -16,7 +16,7 @@ public class Level2Operator : MonoBehaviour
     public float moveSpeed = 0.5f;
     public bool turtleMoves = true;
     public GameObject gameOver;
-
+    public GameObject Finish;
     void Update()
     {
         if (turtleMoves)
@@ -43,10 +43,32 @@ public class Level2Operator : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameManager.Instance.GameOver();
-        gameOver.SetActive(true);
-        turtleMoves = false;
+        
+
+        if (collision.gameObject.name == "FinishLine")
+
+        {
+            Finish.SetActive(true);
+            turtleMoves = false;
+
+        }
+        else
+
+        {
+            GameManager.Instance.GameOver();
+            gameOver.SetActive(true);
+            turtleMoves = false; 
+            
+        }
+
+
+
+
+
+
+
     }
+
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
