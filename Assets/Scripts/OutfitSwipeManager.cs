@@ -3,7 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SwipeManager1 : MonoBehaviour
+/// <summary>
+/// Manages the overall outfit swipe operations and scaling for the scene
+/// </summary>
+/// <remarks>
+/// Maintained by: Manya Mittal
+/// </remarks>
+public class OutfitSwipeManager : MonoBehaviour
 {
     public GameObject scrollbar;
     float scroll_position = 0;
