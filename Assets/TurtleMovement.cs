@@ -26,7 +26,11 @@ public class TurtleMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        LevelOver();
+        if (collision.gameObject.name != "Powerups")
+        {
+            LevelOver();
+        }
+            
     }
 
     void LevelOver()
