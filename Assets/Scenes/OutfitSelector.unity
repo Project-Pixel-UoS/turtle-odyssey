@@ -360,14 +360,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 883202417}
-        m_TargetAssemblyTypeName: SceneManagerScript, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+      - m_Target: {fileID: 276092291}
+        m_TargetAssemblyTypeName: SetOutfit, Assembly-CSharp
+        m_MethodName: SelectOutfit
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: LevelSelection
           m_BoolArgument: 0
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 276092286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc80c0935174e6644a35e405b02b086a, type: 3}
+  m_Script: {fileID: 11500000, guid: c32f5a1f16c06834aa385e34bf51190a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &286690590
