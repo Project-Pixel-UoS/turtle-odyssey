@@ -51,12 +51,17 @@ public class Level2Operator : MonoBehaviour
             wellDone.SetActive(true);
             Time.timeScale = 0f;
             turtleMoves = false;
-
         }
 
         else if (collision.gameObject.CompareTag("Powerup"))
         {
             GameManager.Instance.BoostSpeed();
+            turtleMoves = true;
+            Destroy(collision.gameObject);
+        }
+
+        else if (collision.gameObject.CompareTag("TornadoPowerup"))
+        {
             turtleMoves = true;
             Destroy(collision.gameObject);
         }
@@ -74,7 +79,6 @@ public class Level2Operator : MonoBehaviour
         }
 
     }
-
 
     public void RestartGame()
     {
