@@ -8,6 +8,8 @@ TagManager:
   - Powerup
   - Kelp
   - TornadoPowerup
+  - BubblePowerup
+  - Fish
   layers:
   - Default
   - TransparentFX
