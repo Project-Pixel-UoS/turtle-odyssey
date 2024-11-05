@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public float moveSpeed;
     public bool gameActive = true;
     private float savedSpeed;
+    public float boostedSpeed;
     public GameObject gameButtons;
     public GameObject gameOverMenu;
     private static GameManager _instance;
@@ -67,4 +68,17 @@ public class GameManager : MonoBehaviour
     {
         moveSpeed = savedSpeed;
     }
+
+    public void BoostSpeed()
+    {
+        moveSpeed = boostedSpeed;
+        StartCoroutine(ResetSpeedAfterDelay(8f)); // 8 seconds boost duration
+    }
+
+    private IEnumerator ResetSpeedAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        moveSpeed = savedSpeed;
+    }
+
 }
