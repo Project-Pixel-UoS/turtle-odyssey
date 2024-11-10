@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - Powerup
+  - Kelp
+  - TornadoPowerup
+  - BubblePowerup
+  - Fish
   layers:
   - Default
   - TransparentFX

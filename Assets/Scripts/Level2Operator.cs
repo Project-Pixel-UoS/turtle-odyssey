@@ -16,7 +16,7 @@ public class Level2Operator : MonoBehaviour
     public float moveSpeed = 0.5f;
     public bool turtleMoves = true;
     public GameObject gameOver;
-    public GameObject Finish;
+    public GameObject wellDone;
     void Update()
     {
         if (turtleMoves)
@@ -48,24 +48,35 @@ public class Level2Operator : MonoBehaviour
         if (collision.gameObject.name == "FinishLine")
 
         {
-            Finish.SetActive(true);
+            wellDone.SetActive(true);
+            Time.timeScale = 0f;
             turtleMoves = false;
-
         }
-        else
 
+        else if (collision.gameObject.CompareTag("Powerup"))
         {
-            GameManager.Instance.GameOver();
-            gameOver.SetActive(true);
-            turtleMoves = false; 
-            
+            GameManager.Instance.BoostSpeed();
+            turtleMoves = true;
+            Destroy(collision.gameObject);
         }
 
+        else if (collision.gameObject.CompareTag("TornadoPowerup"))
+        {
+            turtleMoves = true;
+            Destroy(collision.gameObject);
+        }
 
+        else
+        {
+            if (collision.gameObject.name != "Powerups")
+            {
+                GameManager.Instance.GameOver();
+                gameOver.SetActive(true);
+                turtleMoves = false;
 
+            }
 
-
-
+        }
 
     }
 
