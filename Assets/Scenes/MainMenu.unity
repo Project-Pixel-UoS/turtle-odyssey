@@ -917,9 +917,9 @@ RectTransform:
   - {fileID: 2018827873}
   - {fileID: 1973972278}
   - {fileID: 1671615992}
-  - {fileID: 1321255304}
   - {fileID: 2025609230}
   - {fileID: 1318358645}
+  - {fileID: 2049928953}
   m_Father: {fileID: 883202415}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -956,6 +956,7 @@ GameObject:
   - component: {fileID: 1671615994}
   - component: {fileID: 1671615993}
   - component: {fileID: 1671615997}
+  - component: {fileID: 1671615998}
   m_Layer: 5
   m_Name: LevelView
   m_TagString: Untagged
@@ -976,7 +977,7 @@ GameObject:
   - component: {fileID: 1318358647}
   - component: {fileID: 1318358646}
   m_Layer: 5
-  m_Name: Next (1)
+  m_Name: PreviousPageBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1027,7 +1028,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1061,6 +1062,30 @@ MonoBehaviour:
       - m_Target: {fileID: 548914815}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2049928954}
+        m_TargetAssemblyTypeName: PageIndicatorScript, Assembly-CSharp
+        m_MethodName: SwitchPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1671615997}
+        m_TargetAssemblyTypeName: LevelSelectSwipeController, Assembly-CSharp
+        m_MethodName: DisableNavigationButtonsAtEachEnds
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1108,94 +1133,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1318358644}
   m_CullTransparentMesh: 1
---- !u!1 &1321255303
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1321255304}
-  - component: {fileID: 1321255305}
-  m_Layer: 5
-  m_Name: Level2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1321255304
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321255303}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.622215, y: 1.622215, z: 1.622215}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 896129667}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -30.47}
-  m_SizeDelta: {x: 202, y: 193.63}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1321255305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1321255303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50aca6f1716514946b9cbb48f84ce2e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levels:
-  - name: Level1
-    sprite: {fileID: 21300000, guid: 4c5a68456c2084944a4906829e6da151, type: 3}
-    active: 0
-  - name: Level2
-    sprite: {fileID: 21300000, guid: c39b2f2808c1648c79257b304e0a6c86, type: 3}
-    active: 0
-  - name: Level3
-    sprite: {fileID: 21300000, guid: 371de701601e2479093c53585642bc83, type: 3}
-    active: 0
-  - name: Level4
-    sprite: {fileID: 21300000, guid: 8c21bdea3dbb24d48b607d6c0c5eb6f9, type: 3}
-    active: 0
-  - name: Level5
-    sprite: {fileID: 21300000, guid: 8dc1861d29fc94898af8c9b35ce47725, type: 3}
-    active: 0
-  - name: Level6
-    sprite: {fileID: 21300000, guid: 7325afbd9bdb3bf4a9e0a5294a380ba5, type: 3}
-    active: 0
-  - name: Level7
-    sprite: {fileID: 21300000, guid: a24aacfd5711d7d4882012fd6085dcd3, type: 3}
-    active: 0
-  - name: Level8
-    sprite: {fileID: 21300000, guid: 3a7d992c4b141fd4a8935d8047a35d47, type: 3}
-    active: 0
-  - name: Level9
-    sprite: {fileID: 21300000, guid: 742866e0b586ade40aaea8e4f8644e6c, type: 3}
-    active: 0
-  - name: Level10
-    sprite: {fileID: 21300000, guid: 17ee768cafcd2ae4d9fa569be7bc0d2e, type: 3}
-    active: 0
-  - name: Level11
-    sprite: {fileID: 21300000, guid: 890e67644215374489d32e983285aeac, type: 3}
-    active: 0
-  - name: Level12
-    sprite: {fileID: 21300000, guid: f5b15648bb75b234d965b66a61b326a3, type: 3}
-    active: 0
-  pageTemplate: {fileID: 7611308314721655550, guid: 161dfa70275ebb44991823bb53111866, type: 3}
-  pageHolder: {fileID: 1928172663}
 --- !u!1001 &1460817904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1310,7 +1247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 1928172664}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 0
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -1400,6 +1337,60 @@ MonoBehaviour:
   tweenType: 7
   pageIndicatorBox: {fileID: 0}
   pageIndicatorRect: {fileID: 0}
+  nextBtn: {fileID: 2025609229}
+  previousBtn: {fileID: 1318358644}
+--- !u!114 &1671615998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024883612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50aca6f1716514946b9cbb48f84ce2e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levels:
+  - name: Level1
+    sprite: {fileID: 21300000, guid: 4c5a68456c2084944a4906829e6da151, type: 3}
+    active: 0
+  - name: Level2
+    sprite: {fileID: 21300000, guid: c39b2f2808c1648c79257b304e0a6c86, type: 3}
+    active: 0
+  - name: Level3
+    sprite: {fileID: 21300000, guid: 371de701601e2479093c53585642bc83, type: 3}
+    active: 0
+  - name: Level4
+    sprite: {fileID: 21300000, guid: 8c21bdea3dbb24d48b607d6c0c5eb6f9, type: 3}
+    active: 0
+  - name: Level5
+    sprite: {fileID: 21300000, guid: 8dc1861d29fc94898af8c9b35ce47725, type: 3}
+    active: 0
+  - name: Level6
+    sprite: {fileID: 21300000, guid: 7325afbd9bdb3bf4a9e0a5294a380ba5, type: 3}
+    active: 0
+  - name: Level7
+    sprite: {fileID: 21300000, guid: a24aacfd5711d7d4882012fd6085dcd3, type: 3}
+    active: 0
+  - name: Level8
+    sprite: {fileID: 21300000, guid: 3a7d992c4b141fd4a8935d8047a35d47, type: 3}
+    active: 0
+  - name: Level9
+    sprite: {fileID: 21300000, guid: 742866e0b586ade40aaea8e4f8644e6c, type: 3}
+    active: 0
+  - name: Level10
+    sprite: {fileID: 21300000, guid: 17ee768cafcd2ae4d9fa569be7bc0d2e, type: 3}
+    active: 0
+  - name: Level11
+    sprite: {fileID: 21300000, guid: 890e67644215374489d32e983285aeac, type: 3}
+    active: 0
+  - name: Level12
+    sprite: {fileID: 21300000, guid: f5b15648bb75b234d965b66a61b326a3, type: 3}
+    active: 0
+  pageTemplate: {fileID: 7611308314721655550, guid: 161dfa70275ebb44991823bb53111866, type: 3}
+  pageHolder: {fileID: 1928172663}
+  numberOfPages: 0
 --- !u!1 &1927424659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,7 +2146,7 @@ GameObject:
   - component: {fileID: 2025609232}
   - component: {fileID: 2025609231}
   m_Layer: 5
-  m_Name: Next
+  m_Name: NextPageBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2206,7 +2197,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2240,6 +2231,30 @@ MonoBehaviour:
       - m_Target: {fileID: 548914815}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2049928954}
+        m_TargetAssemblyTypeName: PageIndicatorScript, Assembly-CSharp
+        m_MethodName: SwitchPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1671615997}
+        m_TargetAssemblyTypeName: LevelSelectSwipeController, Assembly-CSharp
+        m_MethodName: DisableNavigationButtonsAtEachEnds
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2363,6 +2378,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044598021}
   m_CullTransparentMesh: 1
+--- !u!1 &2049928952
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2049928953}
+  - component: {fileID: 2049928955}
+  - component: {fileID: 2049928954}
+  m_Layer: 5
+  m_Name: PageBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2049928953
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049928952}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 896129667}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -300}
+  m_SizeDelta: {x: 600, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2049928954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049928952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a23e024ad390f6d4ba7b967eb6770f49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activePage: {fileID: 21300000, guid: 27805810ca3b42143b98a028f6bc27d9, type: 3}
+  inactivePage: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  lMManager: {fileID: 1671615998}
+  SwipeController: {fileID: 1671615997}
+  pageHolder: {fileID: 1928172663}
+  paginationBox: {fileID: 2049928952}
+  paginationIndicator: {fileID: 1752230032266763508, guid: e20600b08c5035048af65c2e33a28471, type: 3}
+  PageIndicators: []
+--- !u!114 &2049928955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049928952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 30
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1001 &369638666268832965
 PrefabInstance:
   m_ObjectHideFlags: 0

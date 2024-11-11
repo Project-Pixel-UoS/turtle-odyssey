@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +19,7 @@ public class LevelPage : MonoBehaviour
     /// </summary>
     public void SetButton(int i, LevelButton button)
     {
+        int currentUnlockedLevel = PlayerPrefs.GetInt("levelUnlocked");
         if (i < 0 || i >= buttons.Length)
         {
             return;
@@ -25,6 +27,11 @@ public class LevelPage : MonoBehaviour
 
         buttons[i].name = button.name;
         buttons[i].GetComponent<Image>().sprite = button.sprite;
+
+        // Disables button if it's not unlocked
+        int level = Int32.Parse(button.name.Substring(5));
+        buttons[i].GetComponent<Button>().interactable = currentUnlockedLevel >= level;
+
         buttons[i].SetActive(true);
     }
 }

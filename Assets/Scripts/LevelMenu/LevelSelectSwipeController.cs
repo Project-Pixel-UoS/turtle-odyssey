@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental;
+using UnityEngine.UI;
 
 public class LevelSelectSwipeController : MonoBehaviour//, IDropTarget
 {
@@ -15,16 +16,23 @@ public class LevelSelectSwipeController : MonoBehaviour//, IDropTarget
     float dragThreshold;
     public GameObject pageIndicatorBox;
     public RectTransform pageIndicatorRect;
+    public GameObject nextBtn;
+    public GameObject previousBtn;
     // Start is called before the first frame update
     void Awake()
-    {
-        currentPage = 1;
+    {   LevelMenuManager lMManager = GetComponent<LevelMenuManager>();
+        currentPage = lMManager.LevelButtonToPage(PlayerPrefs.GetInt("levelUnlocked"));
+        Debug.Log(currentPage);
         targetPos = levelPagesRect.localPosition;
+        targetPos -= (currentPage-1) * pageStep;
         dragThreshold = Screen.width / 15;
     }
 
     void Start()
     {
+        maxPage = GetComponent<LevelMenuManager>().numberOfPages;
+        DisableNavigationButtonsAtEachEnds();
+        MovePage();
         // GameObject child = pageIndicatorBox.transform.GetChild(currentPage-1).gameObject;
         // Debug.Log(child.GetComponent<RectTransform>().transform.localPosition);
         // Debug.Log(child.GetComponent<RectTransform>().position);
@@ -59,6 +67,15 @@ public class LevelSelectSwipeController : MonoBehaviour//, IDropTarget
         MovePage();
 
     }
+
+
+
+    public void DisableNavigationButtonsAtEachEnds()
+    {
+        nextBtn.GetComponent<Button>().interactable = currentPage < maxPage;
+        previousBtn.GetComponent<Button>().interactable = currentPage > 1;
+    }
+
     // Update is called once per frame
     void MovePage()
     {

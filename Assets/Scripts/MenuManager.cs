@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,13 @@ public class MenuManager : MonoBehaviour
 {
     public void Start()
     {
+        if (!PlayerPrefs.HasKey("levelUnlocked"))
+        {
+            PlayerPrefs.SetInt("levelUnlocked", 1);
+            Debug.Log("Setting unlocked level to " + PlayerPrefs.GetInt("levelUnlocked"));
+        }
+        PlayerPrefs.SetInt("levelUnlocked", 5);
+        Debug.Log(PlayerPrefs.GetInt("levelUnlocked"));
         if (PlayerPrefs.GetInt("fromLevel") == 1)
         {
             SwitchMenu(GameObject.Find("LevelMenu"));

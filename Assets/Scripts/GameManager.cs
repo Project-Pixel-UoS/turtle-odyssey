@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverMenu;
     private static GameManager _instance;
     public AudioSource bgMusic;
+    public bool hasImmunity = false;
 
     /// <summary>
     /// returns the GameManager

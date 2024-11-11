@@ -15,9 +15,10 @@ public class LevelMenuManager : MonoBehaviour
     public LevelButton[] levels;
     public GameObject pageTemplate;
     public GameObject pageHolder;
+    public int numberOfPages = 0;
     LevelPage page;
 
-    void Start()
+    void Awake()
     {
         for(int i = 0; i < levels.Length; i++)
         {
@@ -29,8 +30,10 @@ public class LevelMenuManager : MonoBehaviour
                         pageHolder.transform);
                 pageObject.name = "Page" + (i / 3 + 1);
                 page = pageObject.GetComponent<LevelPage>();
+                numberOfPages++;
             }
             page.SetButton(i % 3, levels[i]);
+
         }
     }
 
@@ -45,5 +48,15 @@ public class LevelMenuManager : MonoBehaviour
             total += Convert.ToInt32(level.active);
         }
         return total;
+    }
+
+    public int GetNumberOfPages()
+    {
+        return LevelButtonToPage(levels.Length);
+    }
+
+    public int LevelButtonToPage(int buttonNumber)
+    {
+        return buttonNumber / 3 + Convert.ToInt32(buttonNumber % 3 > 0);
     }
 }
