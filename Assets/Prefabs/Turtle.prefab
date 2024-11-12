@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: -1459724628964595951}
   - component: {fileID: 4374492663131207126}
   - component: {fileID: -8438402034400850314}
+  - component: {fileID: 576500327773830353}
+  - component: {fileID: 5144221157858586977}
   m_Layer: 0
   m_Name: Turtle
   m_TagString: Player
@@ -81,7 +83,7 @@ SpriteRenderer:
   m_SortingLayerID: -1815494045
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a2a73aedce971e74795868257dcde80b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a9819800f6db64b4dbfdc6d5893efdb4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,7 +130,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.62, y: 4.55}
+    oldSize: {x: 5, y: 5}
     newSize: {x: 4.62, y: 4.55}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -385,3 +387,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03abedfcbc00a144ba68fbb1bda7f73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outfit: {fileID: 0}
+  outfits:
+  - name: Outfit1
+    outfit: {fileID: 7108339969198208228, guid: 97bbf30d3166d6743bf9a5fa7085e93c, type: 3}
+  - name: Outfit2
+    outfit: {fileID: 7108339969198208228, guid: 80b6d37fadb06754eaa48da13e96cb77, type: 3}
+--- !u!114 &576500327773830353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6323100234846412837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 6.93186e-30
+  m_labelHash: 3.3019832e-22
+  m_SpriteKey: 0
+  m_SpriteHash: 163633734
+--- !u!114 &5144221157858586977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6323100234846412837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 97bbf30d3166d6743bf9a5fa7085e93c, type: 3}

@@ -14,20 +14,11 @@ public class LevelSelector : MonoBehaviour
     public void LoadScene()
     {
         PlayerPrefs.SetInt("fromLevel", 0);
-        switch (gameObject.name)
-        {
-            case "Level1":
-                SceneManager.LoadScene(sceneName: "Level1");
-                break;
-            case "Level2":
-                SceneManager.LoadScene(sceneName: "Level2");
-                break;
-            case "Level3":
-                SceneManager.LoadScene(sceneName: "Level3");
-                break;
-            case "Settings":
-                SceneManager.LoadScene(sceneName: "Settings");
-                break;
-        }
+        SceneManager.LoadScene(sceneName: name);
+    }
+    public void LoadMyScene(GameObject me)
+    {
+        PlayerPrefs.SetInt("fromLevel", 0);
+        SceneManager.LoadScene(sceneName: me.name);
     }
 }

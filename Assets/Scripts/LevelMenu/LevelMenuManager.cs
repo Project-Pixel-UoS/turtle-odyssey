@@ -35,6 +35,7 @@ public class LevelMenuManager : MonoBehaviour
             page.SetButton(i % 3, levels[i]);
 
         }
+        PlayerPrefs.SetInt("maxLevel", levels.Length);
     }
 
     /// <summary>

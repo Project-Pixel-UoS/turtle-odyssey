@@ -93,7 +93,8 @@ public class GameManager : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         int levelNumber = Int32.Parse(scene.name.Substring(5));
         Debug.Log("old unlocked Level is " + PlayerPrefs.GetInt("levelUnlocked"));
-        if (PlayerPrefs.GetInt("levelUnlocked") <= levelNumber)
+        if (PlayerPrefs.GetInt("maxLevel") > levelNumber &&
+            PlayerPrefs.GetInt("levelUnlocked") <= levelNumber)
         {
             PlayerPrefs.SetInt("levelUnlocked", levelNumber+1);
         }

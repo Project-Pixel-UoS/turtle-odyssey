@@ -13,10 +13,26 @@ public class OutfitSwipeManager : MonoBehaviour
 {
     public GameObject scrollbar;
     float scroll_position = 0;
-    float[]pos; 
+    public SerializableOutfit[] outfits;
+    public GameObject outfitBtnTemplate;
+    float[]pos;
     void Start()
     {
-        
+
+        for(int i = 0; i < outfits.Length; i++)
+        {
+            GameObject outfitBtn = Instantiate(outfitBtnTemplate,
+                    transform.position,
+                    Quaternion.identity,
+                    transform);
+            outfitBtn.name = "Outfit" + (i+1);
+            outfitBtn.GetComponent<Image>().sprite = outfits[i].display;
+            if (outfitBtn.name == PlayerPrefs.GetString("Outfit"))
+            {
+                outfitBtn.GetComponent<Toggle>().isOn = true;
+                Debug.Log("Set toggle as selected");
+            }
+        }
     }
 
     void Update()

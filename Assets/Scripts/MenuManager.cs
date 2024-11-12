@@ -12,7 +12,8 @@ public class MenuManager : MonoBehaviour
             PlayerPrefs.SetInt("levelUnlocked", 1);
             Debug.Log("Setting unlocked level to " + PlayerPrefs.GetInt("levelUnlocked"));
         }
-        Debug.Log(PlayerPrefs.GetInt("levelUnlocked"));
+        // Debug.Log(PlayerPrefs.GetInt("levelUnlocked"));
+        // Debug.Log(PlayerPrefs.GetString("Outfit"));
         if (PlayerPrefs.GetInt("fromLevel") == 1)
         {
             SwitchMenu(GameObject.Find("LevelMenu"));
