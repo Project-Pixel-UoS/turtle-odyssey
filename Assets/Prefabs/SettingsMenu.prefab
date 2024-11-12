@@ -651,14 +651,14 @@ MonoBehaviour:
   m_FillRect: {fileID: 590315469469821652}
   m_HandleRect: {fileID: 3238846312309835242}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 0
+  m_MinValue: 0
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4558319840520341042}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SfxVolumeSet
         m_Mode: 1
@@ -1231,14 +1231,14 @@ MonoBehaviour:
   m_FillRect: {fileID: 9037864851190302649}
   m_HandleRect: {fileID: 6771979590038582617}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: 0
+  m_MinValue: 0
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4558319840520341042}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: MusicVolumeSet
         m_Mode: 1
