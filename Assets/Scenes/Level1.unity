@@ -3915,7 +3915,7 @@ PrefabInstance:
       objectReference: {fileID: 214464569}
     - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
       propertyPath: hasImmunity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
       propertyPath: WellDoneMenu

@@ -38,18 +38,26 @@ public class ManageTurtleOutfit : MonoBehaviour
         // }
     }
 
-    Outfit GetOutfit(string outfitName)
+    SerializableOutfit GetOutfit(string outfitName)
     {
-        string assetGUID = AssetDatabase.FindAssets(outfitName)[0];
-        string path = AssetDatabase.GUIDToAssetPath(assetGUID);
-        return AssetDatabase.LoadAssetAtPath<Outfit>(path);
+        for (int i = 0; i < outfits.Length; i++)
+        {
+            if(outfits[i].name == outfitName)
+            {
+                return outfits[i];
+            }
+        }
+        return null;
+        // string assetGUID = AssetDatabase.FindAssets(outfitName)[0];
+        // string path = AssetDatabase.GUIDToAssetPath(assetGUID);
+        // return AssetDatabase.LoadAssetAtPath<Outfit>(path);
     }
 
     public void SetOutfit(string outfitName)
     {
-        Outfit outfit = GetOutfit(outfitName);
+        SerializableOutfit outfit = GetOutfit(outfitName);
         Debug.Log(outfit);
-        Debug.Log("Wearing " + outfit.values.name);
-        GetComponent<SpriteLibrary>().spriteLibraryAsset = outfit.values.outfit;
+        Debug.Log("Wearing " + outfit.name);
+        GetComponent<SpriteLibrary>().spriteLibraryAsset = outfit.outfit;
     }
 }
