@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         bgMusic.Stop();
         gameActive = false;
         gameOverMenu.SetActive(true);
-        // gameButtons.SetActive(false);
+        gameButtons.SetActive(false);
         Pause();
 
         // Time.timeScale = 0f;
