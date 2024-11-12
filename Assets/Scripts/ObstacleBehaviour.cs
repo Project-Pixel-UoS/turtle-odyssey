@@ -12,7 +12,6 @@ public class ObstacleBehaviour : MonoBehaviour
 
     void Start()
     {
-
         if (GameManager.Instance)
         {
             moveSpeed = GameManager.Instance.moveSpeed;
@@ -35,7 +34,4 @@ public class ObstacleBehaviour : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    
-
 }

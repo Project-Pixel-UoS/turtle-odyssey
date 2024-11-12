@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Applies a sine motion animation to whatever it is attached to
+/// </summary>
+/// <remarks>
+/// Maintained by: Olivia StarStuff
+/// </remarks>
 public class SineMove : MonoBehaviour
 {
     private Vector3 position;

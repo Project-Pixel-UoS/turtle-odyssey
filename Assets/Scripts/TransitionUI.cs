@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Stores the transition starting and end position
+/// </summary>
+/// <remarks>
+/// Maintained by: Olivia StarStuff
+/// </remarks>
 public class TransitionUI : MonoBehaviour
 {
     private RectTransform rect;

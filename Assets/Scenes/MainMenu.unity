@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   originalPosition: {x: -2621, y: 0}
-  smoothTime: 0.3
+  smoothTime: 0.5
 --- !u!1 &207000709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,8 +1019,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 80717582}
-  - {fileID: 896129667}
   - {fileID: 2044598022}
+  - {fileID: 896129667}
   - {fileID: 1633975395}
   - {fileID: 1110809398}
   m_Father: {fileID: 0}
@@ -1116,6 +1116,7 @@ GameObject:
   - component: {fileID: 1671615993}
   - component: {fileID: 1671615997}
   - component: {fileID: 1671615998}
+  - component: {fileID: 1671615999}
   m_Layer: 5
   m_Name: LevelView
   m_TagString: Untagged
@@ -1465,7 +1466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5394463075359767706, guid: 6fc930080ae7a5f4d870284cf8a8fdcf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -821.71405
+      value: -821.71484
       objectReference: {fileID: 0}
     - target: {fileID: 5394463075359767706, guid: 6fc930080ae7a5f4d870284cf8a8fdcf, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1557,7 +1558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8320643056610786828, guid: 6fc930080ae7a5f4d870284cf8a8fdcf, type: 3}
       propertyPath: m_Size
-      value: 0.99999917
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8320643056610786828, guid: 6fc930080ae7a5f4d870284cf8a8fdcf, type: 3}
       propertyPath: m_Value
@@ -1643,7 +1644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 1928172664}
-  m_Horizontal: 0
+  m_Horizontal: 1
   m_Vertical: 0
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -1724,15 +1725,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fe3b4cdba2653443af439aebf46ddf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPage: 4
-  currentPage: 0
-  targetPos: {x: 0, y: 0, z: 0}
   pageStep: {x: 1400, y: 0, z: 0}
   levelPagesRect: {fileID: 1928172664}
   tweenTime: 0.4
   tweenType: 7
-  pageIndicatorBox: {fileID: 0}
-  pageIndicatorRect: {fileID: 0}
+  maxPage: 4
+  currentPage: 0
   nextBtn: {fileID: 2025609229}
   previousBtn: {fileID: 1318358644}
 --- !u!114 &1671615998
@@ -1787,6 +1785,75 @@ MonoBehaviour:
   pageTemplate: {fileID: 7611308314721655550, guid: 161dfa70275ebb44991823bb53111866, type: 3}
   pageHolder: {fileID: 1928172663}
   numberOfPages: 0
+--- !u!114 &1671615999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024883612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1671615997}
+          m_TargetAssemblyTypeName: LevelSelectSwipeController, Assembly-CSharp
+          m_MethodName: OnEndDrag
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 2049928954}
+          m_TargetAssemblyTypeName: PageIndicatorScript, Assembly-CSharp
+          m_MethodName: SwitchPage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1671615997}
+          m_TargetAssemblyTypeName: LevelSelectSwipeController, Assembly-CSharp
+          m_MethodName: DisableNavigationButtonsAtEachEnds
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 13
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1671615997}
+          m_TargetAssemblyTypeName: LevelSelectSwipeController, Assembly-CSharp
+          m_MethodName: OnStartDrag
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1927424659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,14 +3052,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23e024ad390f6d4ba7b967eb6770f49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activePage: {fileID: 21300000, guid: 27805810ca3b42143b98a028f6bc27d9, type: 3}
-  inactivePage: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   lMManager: {fileID: 1671615998}
   SwipeController: {fileID: 1671615997}
-  pageHolder: {fileID: 1928172663}
   paginationBox: {fileID: 2049928952}
   paginationIndicator: {fileID: 1752230032266763508, guid: e20600b08c5035048af65c2e33a28471, type: 3}
-  PageIndicators: []
+  activePage: {fileID: 21300000, guid: 27805810ca3b42143b98a028f6bc27d9, type: 3}
+  inactivePage: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!114 &2049928955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3086,6 +3151,10 @@ PrefabInstance:
     - target: {fileID: 3238846312309835242, guid: a1b7dd2044c15a74c9683855a950f0e4, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903026251672500492, guid: a1b7dd2044c15a74c9683855a950f0e4, type: 3}
+      propertyPath: smoothTime
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6771979590038582617, guid: a1b7dd2044c15a74c9683855a950f0e4, type: 3}
       propertyPath: m_AnchorMax.x

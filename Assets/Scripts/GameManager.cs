@@ -7,18 +7,24 @@ using System;
 /// <summary>
 /// Consolidates all stats used by the game in a GameManager Singleton
 /// </summary>
+/// <remarks>
+/// Maintained by: Manya Mittal and Olivia StarStuff
+/// </remarks>
 public class GameManager : MonoBehaviour
 {
-    public float moveSpeed;
-    public bool gameActive = true;
-    private float savedSpeed;
-    public float boostedSpeed;
+    private static GameManager _instance;
+
+    public AudioSource bgMusic;
+    [Header("UI References")]
     public GameObject gameButtons;
     public GameObject gameOverMenu;
-    private static GameManager _instance;
-    public AudioSource bgMusic;
-    public bool hasImmunity = false;
     public GameObject WellDoneMenu;
+    [Header("Game state")]
+    public float moveSpeed;
+    public float boostedSpeed;
+    private float savedSpeed;
+    public bool hasImmunity = false;
+    public bool gameActive = true;
     public bool isGamePaused = false;
 
     /// <summary>
