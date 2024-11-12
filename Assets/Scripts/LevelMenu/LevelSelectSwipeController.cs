@@ -18,6 +18,7 @@ public class LevelSelectSwipeController : MonoBehaviour//, IDropTarget
     public RectTransform pageIndicatorRect;
     public GameObject nextBtn;
     public GameObject previousBtn;
+    private Vector2 dragStart;
     // Start is called before the first frame update
     void Awake()
     {   LevelMenuManager lMManager = GetComponent<LevelMenuManager>();
@@ -33,11 +34,6 @@ public class LevelSelectSwipeController : MonoBehaviour//, IDropTarget
         maxPage = GetComponent<LevelMenuManager>().numberOfPages;
         DisableNavigationButtonsAtEachEnds();
         MovePage();
-        // GameObject child = pageIndicatorBox.transform.GetChild(currentPage-1).gameObject;
-        // Debug.Log(child.GetComponent<RectTransform>().transform.localPosition);
-        // Debug.Log(child.GetComponent<RectTransform>().position);
-        // Debug.Log(child.name);
-        // pageIndicatorRect.localPosition = child.GetComponent<RectTransform>().localPosition;
     }
 
     public void Next()
@@ -68,8 +64,6 @@ public class LevelSelectSwipeController : MonoBehaviour//, IDropTarget
 
     }
 
-
-
     public void DisableNavigationButtonsAtEachEnds()
     {
         nextBtn.GetComponent<Button>().interactable = currentPage < maxPage;
@@ -79,30 +73,30 @@ public class LevelSelectSwipeController : MonoBehaviour//, IDropTarget
     // Update is called once per frame
     void MovePage()
     {
-        // Vector3 indicatorPos = pageIndicatorBox.transform.GetChild(currentPage-1).GetComponent<RectTransform>().localPosition;
         levelPagesRect.LeanMoveLocal(targetPos, tweenTime).setEase(tweenType);
-        // pageIndicatorRect.LeanMoveLocal(indicatorPos, tweenTime).setEase(tweenType);
     }
-    public void OnMouseDown()
+
+    public void OnStartDrag()
     {
-        Debug.Log("Hello");
+        dragStart = Input.mousePosition;
     }
-    // public void OnEndDrag(PointerEventData eventData)
-    // {
-    //     if (Mathf.Abs(eventData.position.x - eventData.pressPosition.x) > dragThreshold)
-    //     {
-    //         if (eventData.position.x > eventData.pressPosition.x)
-    //         {
-    //            Previous();
-    //         }
-    //         else
-    //         {
-    //             Next();
-    //         }
-    //     }
-    //     else
-    //     {
-    //         MovePage();
-    //     }
-    // }
+
+    public void OnEndDrag()
+    {
+        if (Mathf.Abs(Input.mousePosition.x - dragStart.x) > dragThreshold)
+        {
+            if (Input.mousePosition.x > dragStart.x)
+            {
+               Previous();
+            }
+            else
+            {
+                Next();
+            }
+        }
+        else
+        {
+            MovePage();
+        }
+    }
 }
