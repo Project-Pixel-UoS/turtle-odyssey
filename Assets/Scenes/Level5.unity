@@ -328,6 +328,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 945124178}
     - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: hasImmunity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: WellDoneMenu
+      value: 
+      objectReference: {fileID: 129941485}
+    - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
       propertyPath: boostedSpeed
       value: 5
       objectReference: {fileID: 0}
@@ -487,6 +495,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3827634031023406489, guid: caf7a4ea27de03547874b818af6324a4, type: 3}
   m_PrefabInstance: {fileID: 87362311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &129941485 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6577054193039192495, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+  m_PrefabInstance: {fileID: 7568208386789759974}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &163293579
 PrefabInstance:

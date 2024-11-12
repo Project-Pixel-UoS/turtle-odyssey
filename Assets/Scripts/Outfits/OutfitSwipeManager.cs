@@ -13,48 +13,24 @@ public class OutfitSwipeManager : MonoBehaviour
 {
     public GameObject scrollbar;
     float scroll_position = 0;
-    float[]pos; 
+    public SerializableOutfit[] outfits;
+    public GameObject outfitBtnTemplate;
+    float[]pos;
     void Start()
     {
-        
-    }
 
-    void Update()
-    {
-        pos = new float[transform.childCount];
-        float distance = 1f / (pos.Length + 1f);
-        for (int i = 0; i < pos.Length; i++)
+        for(int i = 0; i < outfits.Length; i++)
         {
-            pos[i] = distance * i;
-        }
-
-        if (Input.GetMouseButton(0))
-        {
-            scroll_position = scrollbar.GetComponent<Scrollbar>().value;
-        }
-        else
-        {
-            for (int i = 0; i < pos.Length; i++)
+            GameObject outfitBtn = Instantiate(outfitBtnTemplate,
+                    transform.position,
+                    Quaternion.identity,
+                    transform);
+            outfitBtn.name = "Outfit" + (i+1);
+            outfitBtn.GetComponent<Image>().sprite = outfits[i].display;
+            if (outfitBtn.name == PlayerPrefs.GetString("Outfit"))
             {
-                if (scroll_position < pos[i] + (distance / 2) && scroll_position > pos[i] - (distance / 2))
-                {
-                    scrollbar.GetComponent<Scrollbar>().value = Mathf.Lerp(scrollbar.GetComponent<Scrollbar>().value, pos[i], 0.1f);
-                }
-            }
-        }
-
-        for (int i = 0; i < pos.Length; i++)
-        {
-            if (scroll_position < pos[i] + (distance / 2) && scroll_position > pos[i] - (distance / 2))
-            {
-                transform.GetChild(i).localScale = Vector2.Lerp(transform.GetChild(i).localScale, new Vector2(1f, 1f), 0.1f);
-                for (int a = 0; a < pos.Length; a++)
-                {
-                    if (a != i)
-                    {
-                        transform.GetChild(a).localScale = Vector2.Lerp(transform.GetChild(a).localScale, new Vector2(0.8f, 0.8f), 0.1f);
-                    }
-                }
+                outfitBtn.GetComponent<Toggle>().isOn = true;
+                Debug.Log("Set toggle as selected");
             }
         }
     }

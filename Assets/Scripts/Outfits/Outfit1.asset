@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c0237a60594a4a46a6816cc8cd4d3fe, type: 3}
   m_Name: Outfit1
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: a2a73aedce971e74795868257dcde80b, type: 3}
-  controller: {fileID: 9100000, guid: 8377043cd50d85943bc5d370f3d2095a, type: 2}
+  values:
+    name: outfit1
+    outfit: {fileID: 7108339969198208228, guid: 97bbf30d3166d6743bf9a5fa7085e93c, type: 3}

@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 
 /// <summary>
@@ -43,13 +41,12 @@ public class Level2Operator : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+
 
         if (collision.gameObject.name == "FinishLine")
 
         {
-            wellDone.SetActive(true);
-            Time.timeScale = 0f;
+            GameManager.Instance.GameWin();
             turtleMoves = false;
         }
 
@@ -68,7 +65,7 @@ public class Level2Operator : MonoBehaviour
 
         else
         {
-            if (collision.gameObject.name != "Powerups")
+            if (collision.gameObject.name != "Powerups" && !GameManager.Instance.hasImmunity)
             {
                 GameManager.Instance.GameOver();
                 gameOver.SetActive(true);
@@ -80,9 +77,9 @@ public class Level2Operator : MonoBehaviour
 
     }
 
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    // public void RestartGame()
+    // {
+    //     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    // }
 
 }

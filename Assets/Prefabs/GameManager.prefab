@@ -63,11 +63,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4f595062f202944a06e625532e06bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  gameActive: 0
+  bgMusic: {fileID: -1199872531867708237}
   gameButtons: {fileID: 0}
   gameOverMenu: {fileID: 0}
-  bgMusic: {fileID: -1199872531867708237}
+  WellDoneMenu: {fileID: 0}
+  moveSpeed: 5
+  boostedSpeed: 0
+  hasImmunity: 0
+  gameActive: 0
+  isGamePaused: 0
 --- !u!114 &3383583330951545138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +113,7 @@ AudioSource:
   m_GameObject: {fileID: 5733670703104593008}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4130876011439932067, guid: 2ae9d85e00386f3489b9dd6f5c31f1c2, type: 2}
   m_audioClip: {fileID: 8300000, guid: 0998087a5118d4040ab717dd23dc336d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
