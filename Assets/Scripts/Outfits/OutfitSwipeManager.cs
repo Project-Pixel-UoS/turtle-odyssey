@@ -11,8 +11,6 @@ using UnityEngine.UI;
 /// </remarks>
 public class OutfitSwipeManager : MonoBehaviour
 {
-    public GameObject scrollbar;
-    float scroll_position = 0;
     public SerializableOutfit[] outfits;
     public GameObject outfitBtnTemplate;
     float[]pos;

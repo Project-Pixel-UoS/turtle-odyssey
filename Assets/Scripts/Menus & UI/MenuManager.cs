@@ -11,13 +11,17 @@ using UnityEngine;
 /// </remarks>
 public class MenuManager : MonoBehaviour
 {
-    public void Start()
+    public void Awake()
     {
+        PlayerPrefs.SetInt("levelUnlocked", 3);
         if (!PlayerPrefs.HasKey("levelUnlocked"))
         {
             PlayerPrefs.SetInt("levelUnlocked", 1);
             Debug.Log("Setting unlocked level to " + PlayerPrefs.GetInt("levelUnlocked"));
         }
+    }
+    public void Start()
+    {
         // Debug.Log(PlayerPrefs.GetInt("levelUnlocked"));
         // Debug.Log(PlayerPrefs.GetString("Outfit"));
         if (PlayerPrefs.GetInt("fromLevel") == 1)

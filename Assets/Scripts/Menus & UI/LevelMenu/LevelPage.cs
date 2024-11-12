@@ -31,7 +31,7 @@ public class LevelPage : MonoBehaviour
         // Disables button if it's not unlocked
         int level = Int32.Parse(button.name.Substring(5));
         buttons[i].GetComponent<Button>().interactable = currentUnlockedLevel >= level;
-
+        buttons[i].transform.GetChild(0).gameObject.SetActive(currentUnlockedLevel > level);
         buttons[i].SetActive(true);
     }
 }
