@@ -3313,6 +3313,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: moveSpeed
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
       propertyPath: gameButtons
       value: 
       objectReference: {fileID: 229094238}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3925451593683724284}
   - component: {fileID: 3480834771503028576}
   - component: {fileID: 253029917889853720}
-  - component: {fileID: 8238934806842584353}
+  - component: {fileID: 2316535370793162293}
   m_Layer: 0
   m_Name: TornadoPowerup
   m_TagString: Untagged
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8986336163961332848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.83, y: -0.3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 19.6477, y: -0.9777, z: 0}
+  m_LocalScale: {x: 1.9981009, y: 1.9853063, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5177388603050735206, guid: 8884154dfe85442a3a3578be807dbcdf, type: 3}
-  m_Color: {r: 0.013375282, g: 0, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e74b19f49ad2d114ca051661e370804c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 0
+  m_Size: {x: 1.8, y: 1.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23cd9cf6392814712afc78481ca7cb3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &8238934806842584353
-BoxCollider2D:
+--- !u!60 &2316535370793162293
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -132,14 +132,63 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.25, y: 0.25, z: 0.25, w: 0.25}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1.82, y: 1.6}
+    newSize: {x: 1.8, y: 1.8}
     adaptiveTilingThreshold: 0.5
-    drawMode: 2
+    drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.825, y: -0.315}
+      - {x: 0.865, y: -0.155}
+      - {x: 0.865, y: 0.114999995}
+      - {x: 0.85499996, y: 0.205}
+      - {x: 0.755, y: 0.415}
+      - {x: 0.705, y: 0.48499998}
+      - {x: 0.525, y: 0.66499996}
+      - {x: 0.275, y: 0.775}
+      - {x: 0.205, y: 0.78499997}
+      - {x: -0.095, y: 0.78499997}
+      - {x: -0.225, y: 0.745}
+      - {x: -0.405, y: 0.645}
+      - {x: -0.575, y: 0.45499998}
+      - {x: -0.66499996, y: 0.275}
+      - {x: -0.715, y: 0.145}
+      - {x: -0.715, y: -0.145}
+      - {x: -0.655, y: -0.345}
+      - {x: -0.555, y: -0.49499997}
+      - {x: -0.405, y: -0.655}
+      - {x: -0.205, y: -0.765}
+      - {x: -0.044999998, y: -0.79499996}
+      - {x: 0.21499999, y: -0.79499996}
+      - {x: 0.385, y: -0.755}
+      - {x: 0.585, y: -0.635}
+      - {x: 0.73499995, y: -0.475}
+    - - {x: 0.635, y: -0.79499996}
+      - {x: 0.72499996, y: -0.79499996}
+      - {x: 0.775, y: -0.78499997}
+      - {x: 0.775, y: -0.66499996}
+      - {x: 0.765, y: -0.635}
+      - {x: 0.635, y: -0.635}
+      - {x: 0.615, y: -0.645}
+      - {x: 0.615, y: -0.765}
+    - - {x: -0.805, y: 0.675}
+      - {x: -0.865, y: 0.645}
+      - {x: -0.865, y: 0.385}
+      - {x: -0.85499996, y: 0.36499998}
+      - {x: -0.625, y: 0.36499998}
+      - {x: -0.565, y: 0.45499998}
+      - {x: -0.565, y: 0.615}
+      - {x: -0.60499996, y: 0.675}
+    - - {x: -0.525, y: 0.745}
+      - {x: -0.545, y: 0.705}
+      - {x: -0.545, y: 0.625}
+      - {x: -0.505, y: 0.59499997}
+      - {x: -0.435, y: 0.59499997}
+      - {x: -0.405, y: 0.635}
+      - {x: -0.405, y: 0.715}
+      - {x: -0.45499998, y: 0.745}
+  m_UseDelaunayMesh: 0
