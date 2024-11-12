@@ -3,6 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Manages menu transitions
+/// </summary>
+/// <remarks>
+/// Maintained by: Olivia StarStuff
+/// </remarks>
 public class MenuManager : MonoBehaviour
 {
     public void Start()

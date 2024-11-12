@@ -6,6 +6,9 @@ using UnityEngine;
 /// Represents a button that will take you to a level.
 /// Used to set a LevelButton prefab
 /// </summary>
+/// <remarks>
+/// Maintained by: Olivia StarStuff
+/// </remarks>
 [System.Serializable]
 public class LevelButton
 {

@@ -4,18 +4,28 @@ using UnityEngine;
 using UnityEngine.Experimental;
 using UnityEngine.UI;
 
-public class LevelSelectSwipeController : MonoBehaviour//, IDropTarget
+/// <summary>
+/// Manages the swipe and scroll snap behaviour of the level menu
+/// </summary>
+/// <remarks>
+/// Maintained by: Olivia StarStuff
+/// Created following Rehope Games tutorial at
+/// https://www.youtube.com/watch?v=qf9xe2mbWeU
+/// </remarks>
+public class LevelSelectSwipeController : MonoBehaviour
 {
-    public int maxPage;
-    public int currentPage;
-    public Vector3 targetPos;
+
+    [Header("Swipe details")]
     public Vector3 pageStep;
     public RectTransform levelPagesRect;
     public float tweenTime;
     public LeanTweenType tweenType;
     float dragThreshold;
-    public GameObject pageIndicatorBox;
-    public RectTransform pageIndicatorRect;
+    [Space]
+    public int maxPage;
+    public int currentPage;
+    Vector3 targetPos;
+    [Header("Button References")]
     public GameObject nextBtn;
     public GameObject previousBtn;
     private Vector2 dragStart;
@@ -23,7 +33,7 @@ public class LevelSelectSwipeController : MonoBehaviour//, IDropTarget
     void Awake()
     {   LevelMenuManager lMManager = GetComponent<LevelMenuManager>();
         currentPage = lMManager.LevelButtonToPage(PlayerPrefs.GetInt("levelUnlocked"));
-        Debug.Log(currentPage);
+        // Debug.Log(currentPage);
         targetPos = levelPagesRect.localPosition;
         targetPos -= (currentPage-1) * pageStep;
         dragThreshold = Screen.width / 15;
@@ -61,7 +71,6 @@ public class LevelSelectSwipeController : MonoBehaviour//, IDropTarget
         targetPos += (currentPage-1) * pageStep;
         currentPage = 1;
         MovePage();
-
     }
 
     public void DisableNavigationButtonsAtEachEnds()

@@ -7,7 +7,7 @@ using UnityEngine;
 /// Generates all pages and buttons for all levels of the game
 /// </summary>
 /// <remarks>
-/// Maintained by: Olivia Aurora
+/// Maintained by: Olivia StarStuff
 /// </remarks>
 public class LevelMenuManager : MonoBehaviour
 {
@@ -51,10 +51,10 @@ public class LevelMenuManager : MonoBehaviour
         return total;
     }
 
-    public int GetNumberOfPages()
-    {
-        return LevelButtonToPage(levels.Length);
-    }
+    // public int GetNumberOfPages()
+    // {
+    //     return LevelButtonToPage(levels.Length);
+    // }
 
     public int LevelButtonToPage(int buttonNumber)
     {

@@ -3,24 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// displays which page which the user is on
+/// </summary>
+/// <remarks>
+/// Maintained by: Olivia StarStuff
+/// </remarks>
 public class PageIndicatorScript : MonoBehaviour
 {
-    public Sprite activePage;
-    public Sprite inactivePage;
     public LevelMenuManager lMManager;
     public LevelSelectSwipeController SwipeController;
-    public GameObject pageHolder;
+    [Space(10)]
     public GameObject paginationBox;
     public GameObject paginationIndicator;
-    public GameObject[] PageIndicators;
-    private int numberOfPages;
+    GameObject[] PageIndicators;
+    [Space(10)]
+    public Sprite activePage;
+    public Sprite inactivePage;
     // Start is called before the first frame update
     void Start()
     {
-
-        numberOfPages = lMManager.GetNumberOfPages();
-        PageIndicators = new GameObject[numberOfPages];
-        for (int i = 0; i< numberOfPages; i++ )
+        PageIndicators = new GameObject[lMManager.numberOfPages];
+        for (int i = 0; i< lMManager.numberOfPages; i++ )
         {
             PageIndicators[i]  = Instantiate(paginationIndicator,
                         transform.position,
@@ -32,7 +36,7 @@ public class PageIndicatorScript : MonoBehaviour
 
     public void SwitchPage()
     {
-        for (int i = 0; i < numberOfPages; i++)
+        for (int i = 0; i < lMManager.numberOfPages; i++)
         {
             Image imageComponent = PageIndicators[i].GetComponent<Image>();
             bool isCurrentPage = i == SwipeController.currentPage-1;

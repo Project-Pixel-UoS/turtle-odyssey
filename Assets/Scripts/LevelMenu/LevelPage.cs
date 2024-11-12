@@ -8,7 +8,7 @@ using UnityEngine.UI;
 /// Controls a page of buttons that lead to levels of the game.
 /// </summary>
 /// <remarks>
-/// Maintained by: Olivia Aurora
+/// Maintained by: Olivia StarStuff
 /// </remarks>
 public class LevelPage : MonoBehaviour
 {
