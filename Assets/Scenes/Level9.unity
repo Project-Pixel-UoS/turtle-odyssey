@@ -336,6 +336,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 945124178}
     - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
+      propertyPath: WellDoneMenu
+      value: 
+      objectReference: {fileID: 7568208386789759975}
+    - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
       propertyPath: boostedSpeed
       value: 5
       objectReference: {fileID: 0}
@@ -6304,3 +6308,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+--- !u!1 &7568208386789759975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6577054193039192495, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
+  m_PrefabInstance: {fileID: 7568208386789759974}
+  m_PrefabAsset: {fileID: 0}

@@ -12,7 +12,6 @@ public class MenuManager : MonoBehaviour
             PlayerPrefs.SetInt("levelUnlocked", 1);
             Debug.Log("Setting unlocked level to " + PlayerPrefs.GetInt("levelUnlocked"));
         }
-        PlayerPrefs.SetInt("levelUnlocked", 5);
         Debug.Log(PlayerPrefs.GetInt("levelUnlocked"));
         if (PlayerPrefs.GetInt("fromLevel") == 1)
         {

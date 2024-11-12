@@ -24,17 +24,17 @@ public class TurtleMovement : MonoBehaviour
         transform.Translate(0f, moveY * moveSpeed * Time.deltaTime, 0f);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.name != "Powerups")
-        {
-            LevelOver();
-        }
-            
-    }
+    // private void OnCollisionEnter2D(Collision2D collision)
+    // {
+    //     if (collision.gameObject.name != "Powerups" && !GameManager.Instance.hasImmunity)
+    //     {
+    //         LevelOver();
+    //     }
 
-    void LevelOver()
-    {
-        Time.timeScale = 0f;
-    }
+    // }
+
+    // void LevelOver()
+    // {
+    //     Time.timeScale = 0f;
+    // }
 }

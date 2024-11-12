@@ -10,7 +10,7 @@ using TMPro;
 /// <remarks>
 /// Maintained by: Manya Mittal
 /// </remarks>
-public class TimeManagerScript : MonoBehaviour   
+public class TimeManagerScript : MonoBehaviour
 {
     public float TimeRemaining;
     public bool TimerOn = false;
@@ -23,22 +23,23 @@ public class TimeManagerScript : MonoBehaviour
 
     void Update()
     {
-        if (TimerOn) 
+        if (TimerOn && !GameManager.Instance.isGamePaused)
         {
             if(TimeRemaining > 0)
             {
                 TimeRemaining -= Time.deltaTime;
                 updatingTimer(TimeRemaining);
             }
-            else 
+            else
             {
                 TimeRemaining = 0;
                 TimerOn = false;
+                GameManager.Instance.GameWin();
             }
         }
     }
 
-    void updatingTimer(float currentTime) 
+    void updatingTimer(float currentTime)
     {
         if (TimerTxt != null)
         {

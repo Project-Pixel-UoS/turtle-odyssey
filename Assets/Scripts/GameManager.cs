@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System;
 
 /// <summary>
 /// Consolidates all stats used by the game in a GameManager Singleton
@@ -16,6 +18,8 @@ public class GameManager : MonoBehaviour
     private static GameManager _instance;
     public AudioSource bgMusic;
     public bool hasImmunity = false;
+    public GameObject WellDoneMenu;
+    public bool isGamePaused = false;
 
     /// <summary>
     /// returns the GameManager
@@ -52,8 +56,8 @@ public class GameManager : MonoBehaviour
     {
         bgMusic.Stop();
         gameActive = false;
-        gameOverMenu.SetActive(false);
-        gameButtons.SetActive(false);
+        gameOverMenu.SetActive(true);
+        // gameButtons.SetActive(false);
         Pause();
 
         // Time.timeScale = 0f;
@@ -61,12 +65,14 @@ public class GameManager : MonoBehaviour
 
     public void Pause()
     {
+        isGamePaused = true;
         savedSpeed = moveSpeed;
         moveSpeed = 0;
     }
 
     public void Resume()
     {
+        isGamePaused = false;
         moveSpeed = savedSpeed;
     }
 
@@ -80,6 +86,20 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         moveSpeed = savedSpeed;
+    }
+
+    public void GameWin()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+        int levelNumber = Int32.Parse(scene.name.Substring(5));
+        Debug.Log("old unlocked Level is " + PlayerPrefs.GetInt("levelUnlocked"));
+        if (PlayerPrefs.GetInt("levelUnlocked") <= levelNumber)
+        {
+            PlayerPrefs.SetInt("levelUnlocked", levelNumber+1);
+        }
+        Debug.Log("new unlocked Level is " + PlayerPrefs.GetInt("levelUnlocked"));
+        WellDoneMenu.SetActive(true);
+        Pause();
     }
 
 }
