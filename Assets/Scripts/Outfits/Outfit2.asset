@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   values:
     name: outfit2
+    display: {fileID: 0}
     outfit: {fileID: 7108339969198208228, guid: 80b6d37fadb06754eaa48da13e96cb77, type: 3}
+    cost: 1

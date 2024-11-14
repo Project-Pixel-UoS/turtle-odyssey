@@ -19,10 +19,12 @@ public class GameManager : MonoBehaviour
     public GameObject gameButtons;
     public GameObject gameOverMenu;
     public GameObject WellDoneMenu;
+    public PearlScoreUI pearlScoreUI;
     [Header("Game state")]
     public float moveSpeed;
     public float boostedSpeed;
     private float savedSpeed;
+    public int pearlScore = 0;
     public bool hasImmunity = false;
     public bool gameActive = true;
     public bool isGamePaused = false;
@@ -56,6 +58,9 @@ public class GameManager : MonoBehaviour
     {
         bgMusic = GetComponent<AudioSource>();
         savedSpeed = moveSpeed;
+        pearlScore = PlayerPrefs.GetInt("PearlScore");
+        pearlScoreUI = GameObject.Find("PearlScore").GetComponent<PearlScoreUI>();
+        pearlScoreUI.UpdateScore(pearlScore);
     }
 
     public void GameOver()
@@ -107,6 +112,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("new unlocked Level is " + PlayerPrefs.GetInt("levelUnlocked"));
         WellDoneMenu.SetActive(true);
         Pause();
+        PlayerPrefs.SetInt("PearlScore", pearlScore);
     }
 
+    public void UpdatePearlScore()
+    {
+        pearlScore++;
+        pearlScoreUI.UpdateScore(pearlScore);
+    }
 }
