@@ -19,4 +19,5 @@ public class SerializableOutfit {
     public string name;
     public Sprite display;
     public SpriteLibraryAsset outfit;
+    public int cost;
 }

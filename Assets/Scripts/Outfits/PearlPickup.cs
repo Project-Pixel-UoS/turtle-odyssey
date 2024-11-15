@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class PearlPickup : MonoBehaviour
 {
-    public AudioSource player;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -15,14 +13,6 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-
-    public void PlaySFx()
-    {
-        player.Play();
-
 
     }
 }

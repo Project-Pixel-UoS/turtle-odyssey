@@ -41,8 +41,6 @@ public class Level2Operator : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-
         if (collision.gameObject.name == "FinishLine")
 
         {
@@ -63,6 +61,11 @@ public class Level2Operator : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
+        else if (collision.gameObject.name == "PearlPickup")
+        {
+            GameManager.Instance.UpdatePearlScore();
+            Destroy(collision.gameObject);
+        }
         else
         {
             if (collision.gameObject.name != "Powerups" && !GameManager.Instance.hasImmunity)
