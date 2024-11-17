@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 
 /// <summary>
@@ -16,7 +14,7 @@ public class Level2Operator : MonoBehaviour
     public float moveSpeed = 0.5f;
     public bool turtleMoves = true;
     public GameObject gameOver;
-    public GameObject Finish;
+    public GameObject wellDone;
     void Update()
     {
         if (turtleMoves)
@@ -43,35 +41,48 @@ public class Level2Operator : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-
         if (collision.gameObject.name == "FinishLine")
 
         {
-            Finish.SetActive(true);
+            GameManager.Instance.GameWin();
             turtleMoves = false;
+        }
 
+        else if (collision.gameObject.CompareTag("Powerup"))
+        {
+            GameManager.Instance.BoostSpeed();
+            turtleMoves = true;
+            Destroy(collision.gameObject);
+        }
+
+        else if (collision.gameObject.CompareTag("TornadoPowerup"))
+        {
+            turtleMoves = true;
+            Destroy(collision.gameObject);
+        }
+
+        else if (collision.gameObject.name == "PearlPickup")
+        {
+            GameManager.Instance.UpdatePearlScore();
+            Destroy(collision.gameObject);
         }
         else
-
         {
-            GameManager.Instance.GameOver();
-            gameOver.SetActive(true);
-            turtleMoves = false; 
-            
+            if (collision.gameObject.name != "Powerups" && !GameManager.Instance.hasImmunity)
+            {
+                GameManager.Instance.GameOver();
+                gameOver.SetActive(true);
+                turtleMoves = false;
+
+            }
+
         }
 
-
-
-
-
-
-
     }
 
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    // public void RestartGame()
+    // {
+    //     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    // }
 
 }
