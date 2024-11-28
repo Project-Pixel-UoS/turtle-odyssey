@@ -601,7 +601,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 754, y: -280}
+  m_AnchoredPosition: {x: 754, y: -236}
   m_SizeDelta: {x: 939.6, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &435082205
@@ -1832,7 +1832,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -65.79993, y: -230}
+  m_AnchoredPosition: {x: -65.80005, y: -230}
   m_SizeDelta: {x: 1500, y: 473}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1150782602
@@ -1964,9 +1964,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 113.00007, y: -645}
-  m_SizeDelta: {x: 400, y: 50}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -777, y: -543}
+  m_SizeDelta: {x: 612.3, y: 50}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1245489382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1993,7 +1993,12 @@ MonoBehaviour:
 
     Matt Bridson
 
-    Usmaan Tariq'
+    Robin Sachdeva
+
+    Usmaan
+    Tariq
+
+    Xiomara Andrade Sumbana'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2506,7 +2511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1594447747
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2608,7 +2613,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -427, y: -280}
+  m_AnchoredPosition: {x: -427, y: -236}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1602839132
@@ -3933,9 +3938,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -376.9999, y: -645}
+  m_AnchoredPosition: {x: -86.99988, y: -601}
   m_SizeDelta: {x: 800, y: 50}
-  m_Pivot: {x: 0.5, y: 1}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1989289920
 MonoBehaviour:
   m_ObjectHideFlags: 0
