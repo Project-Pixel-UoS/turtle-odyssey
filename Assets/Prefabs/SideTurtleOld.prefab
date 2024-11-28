@@ -58,11 +58,11 @@ PrefabInstance:
     - target: {fileID: 3844192648345379795, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: outfits.Array.data[0].outfit
       value: 
-      objectReference: {fileID: 7108339969198208228, guid: 298726b6f2f73dd40826865734de5ef6, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3844192648345379795, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: outfits.Array.data[1].outfit
       value: 
-      objectReference: {fileID: 7108339969198208228, guid: 2ff74bbb00168e94991c70f46d7ccfe2, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 4425367552297056743, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -127,6 +127,14 @@ PrefabInstance:
       propertyPath: swipeThreshold
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 8019041615132198951, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8019041615132198951, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -163,3 +171,5 @@ MonoBehaviour:
   bubblePrefab: {fileID: 4040392632284901541, guid: 335f160311e3048d18fcdb54b6785733, type: 3}
   firePoint: {fileID: 7620094938647307091}
   fireRate: 1
+  isBubblerActive: 0
+  shotsRemaining: 0
