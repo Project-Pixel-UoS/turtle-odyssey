@@ -1035,7 +1035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsSetLevelUnlocked: 0
-  LevelUnlocked: 7
+  LevelUnlocked: 15
   IsSetPearls: 0
   totalPearls: 5
 --- !u!1 &896129666
@@ -1828,6 +1828,15 @@ MonoBehaviour:
     active: 0
   - name: Level12
     sprite: {fileID: 21300000, guid: f5b15648bb75b234d965b66a61b326a3, type: 3}
+    active: 0
+  - name: Level13
+    sprite: {fileID: 21300000, guid: ad32855463ea0e44895c7e7da5b27702, type: 3}
+    active: 0
+  - name: Level14
+    sprite: {fileID: 21300000, guid: 093c298c8cb97fd498ea370059d51ba5, type: 3}
+    active: 0
+  - name: Level15
+    sprite: {fileID: 21300000, guid: 48710433d01c9e2419c5a803b444d7d3, type: 3}
     active: 0
   pageTemplate: {fileID: 7611308314721655550, guid: 161dfa70275ebb44991823bb53111866, type: 3}
   pageHolder: {fileID: 1928172663}
