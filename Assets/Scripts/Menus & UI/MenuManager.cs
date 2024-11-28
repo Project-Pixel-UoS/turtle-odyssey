@@ -68,4 +68,9 @@ public class MenuManager : MonoBehaviour
         PlayerPrefs.DeleteKey("fromLevel");
         Debug.Log("Application ending after " + Time.time + " seconds");
     }
+
+    public void OpenWebsite(string url)
+    {
+        Application.OpenURL(url);
+    }
 }
