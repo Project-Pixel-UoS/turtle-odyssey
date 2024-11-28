@@ -2,6 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Manages the bubble powerup's activation
+/// </summary>
+/// <remarks>
+/// Created by: Aashish and Abdullah
+/// Maintained by: Manya Mittal and Olivia StarStuff
+/// </remarks>
 public class BubblePowerup : MonoBehaviour
 {
     public float powerupDuration = 10f; // Duration of the powerup
@@ -9,30 +16,13 @@ public class BubblePowerup : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "SideTurtle")
+        if (collision.gameObject.name != "SideTurtle") { return; }
+        turtleShooting = collision.GetComponent<TurtleShooting>();
+        if (turtleShooting != null)
         {
-            turtleShooting = collision.GetComponent<TurtleShooting>();
-            if (turtleShooting != null)
-            {
-                StartCoroutine(ActivateBubblePowerup());
-            }
-            // Disable the powerup object visually
-            gameObject.SetActive(false);
+            turtleShooting.ActivateBubbler(powerupDuration);
         }
-    }
-
-    private IEnumerator ActivateBubblePowerup()
-    {
-        // Enable bubble shooting
-        turtleShooting.EnableBubbleGun();
-
-        // Wait for the duration of the powerup
-        yield return new WaitForSeconds(powerupDuration);
-
-        // Disable bubble shooting
-        turtleShooting.DisableBubbleGun();
-
-        // Destroy the powerup object
-        Destroy(gameObject);
+        // Disable the powerup object visually
+        gameObject.SetActive(false);
     }
 }
