@@ -31,6 +31,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 5394463075359767706}
   - {fileID: 9059135170715437881}
   m_Father: {fileID: 0}
   m_RootOrder: -1
@@ -138,8 +139,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5394463075359767706}
+  m_Children: []
   m_Father: {fileID: 6794519869361301601}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -231,12 +231,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9059135170715437881}
+  m_Father: {fileID: 6794519869361301601}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -821.7141, y: 248}
+  m_AnchoredPosition: {x: -821.7141, y: 246.50005}
   m_SizeDelta: {x: 618.5, y: 494.1}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &4988461889539173429
@@ -291,15 +291,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 772c68c5e371d884cb13f47a4326a1d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollbar: {fileID: 0}
   outfits:
   - name: Outfit1
     display: {fileID: 21300000, guid: a9819800f6db64b4dbfdc6d5893efdb4, type: 3}
-    outfit: {fileID: 7108339969198208228, guid: 97bbf30d3166d6743bf9a5fa7085e93c, type: 3}
+    outfit: {fileID: 0}
+    cost: 0
   - name: Outfit2
     display: {fileID: 21300000, guid: 7465da05010f56940a44be106314a936, type: 3}
-    outfit: {fileID: 7108339969198208228, guid: 80b6d37fadb06754eaa48da13e96cb77, type: 3}
+    outfit: {fileID: 0}
+    cost: 0
+  - name: Outfit3
+    display: {fileID: 21300000, guid: 36531955008fc5c458a6814481508010, type: 3}
+    outfit: {fileID: 0}
+    cost: 0
+  - name: Outfit4
+    display: {fileID: 21300000, guid: aa04b99b11e680d4daac8f4960a4b194, type: 3}
+    outfit: {fileID: 0}
+    cost: 0
+  - name: Outfit5
+    display: {fileID: 21300000, guid: 04d87da750e77a942b8ee2d54752b9b1, type: 3}
+    outfit: {fileID: 0}
+    cost: 0
+  - name: Outfit6
+    display: {fileID: 21300000, guid: 84d129916f181f34f9237d7a9ae39a9e, type: 3}
+    outfit: {fileID: 0}
+    cost: 0
   outfitBtnTemplate: {fileID: 2184634902356690486, guid: 4b1b41fd7776c484ba22afbe56d7ffcf, type: 3}
+  outfitButtons: []
+  unlocker: {fileID: 0}
 --- !u!114 &5592154951965232199
 MonoBehaviour:
   m_ObjectHideFlags: 0

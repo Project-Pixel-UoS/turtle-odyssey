@@ -17,6 +17,13 @@ public class OutfitSwipeManager : MonoBehaviour
     public GameObject[] outfitButtons;
     public OutfitUnlocker unlocker;
     float[]pos;
+    public int numberOfPages;
+
+    void Awake()
+    {
+        numberOfPages = (outfits.Length) % 3 > 0 ? 1 : 0;
+        numberOfPages += outfits.Length/3;
+    }
     void Start()
     {
         int unlockedOutfits = PlayerPrefs.GetInt("OutfitUnlockedFlags");
@@ -27,22 +34,19 @@ public class OutfitSwipeManager : MonoBehaviour
                     transform.position,
                     Quaternion.identity,
                     transform);
-            outfitBtn.name = outfits[i].name;
-            outfitBtn.GetComponent<Image>().sprite = outfits[i].display;
-            if (outfitBtn.name == PlayerPrefs.GetString("Outfit"))
-            {
-                outfitBtn.GetComponent<Toggle>().isOn = true;
-                Debug.Log("Set toggle as selected");
-            }
 
-            if (!isOutfitUnlocked(i)) {
+            outfitBtn.GetComponent<SetOutfit>().SetMyOutfit(outfits[i]);
+
+            if (!isOutfitUnlocked(i))
+            {
                 Debug.Log(PlayerPrefs.GetInt("OutfitUnlockedFlags"));
                 outfitBtn.GetComponent<Toggle>().interactable = false;
             }
             else
             {
-                outfitBtn.transform.GetChild(0).gameObject.SetActive(false);
+                outfitBtn.GetComponent<SetOutfit>().SetUnlocked();
             }
+
             outfitBtn.GetComponent<SetOutfit>().SetCost(outfits[i].cost);
             outfitButtons[i] = outfitBtn;
         }
@@ -55,12 +59,8 @@ public class OutfitSwipeManager : MonoBehaviour
         return (unlockedOutfits & (1 << index)) != 0;
     }
 
-    public void UnlockOutfit(int i)
+    public bool UnlockOutfit(int index)
     {
-        if (unlocker.UnlockOutfit(outfits[i]))
-        {
-            outfitButtons[i].GetComponent<Toggle>().interactable = true;
-            outfitButtons[i].transform.GetChild(0).gameObject.SetActive(false);
-        }
+        return unlocker.UnlockOutfit(outfits[index]);
     }
 }

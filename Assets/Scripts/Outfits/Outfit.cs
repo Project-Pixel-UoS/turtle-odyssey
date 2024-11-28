@@ -18,6 +18,6 @@ public class Outfit : ScriptableObject {
 public class SerializableOutfit {
     public string name;
     public Sprite display;
-    public SpriteLibraryAsset outfit;
+    public Sprite outfit;
     public int cost;
 }

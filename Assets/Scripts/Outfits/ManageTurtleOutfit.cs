@@ -12,15 +12,15 @@ using UnityEngine.U2D.Animation;
 /// </remarks>
 public class ManageTurtleOutfit : MonoBehaviour
 {
-    SpriteRenderer outfitRenderer;
-    Animator animator;
+    public SpriteRenderer outfitRenderer;
+    // Animator animator;
     public SerializableOutfit[] outfits;
 
     // Start is called before the first frame update
     void Start()
     {
-        outfitRenderer = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
+        // outfitRenderer = GetComponent<SpriteRenderer>();
+        // animator = GetComponent<Animator>();
         // PlayerPrefs.DeleteKey("Outfit");
         // PlayerPrefs.SetString("Outfit", "Outfit2");
         string outfitName = PlayerPrefs.GetString("Outfit");
@@ -58,6 +58,7 @@ public class ManageTurtleOutfit : MonoBehaviour
         SerializableOutfit outfit = GetOutfit(outfitName);
         Debug.Log(outfit);
         Debug.Log("Wearing " + outfit.name);
-        GetComponent<SpriteLibrary>().spriteLibraryAsset = outfit.outfit;
+        // GetComponent<SpriteLibrary>().spriteLibraryAsset = outfit.outfit;
+        outfitRenderer.sprite = outfit.outfit;
     }
 }

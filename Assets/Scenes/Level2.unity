@@ -1103,6 +1103,14 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 263448713}
+    - target: {fileID: 278614097282082420, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 278614097282082420, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 357805445230587525, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_SortingOrder
       value: 0

@@ -8,21 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 5323f2c479c135f4f96e0b6170e2813a
-  - enabled: 0
-    path: Assets/Scenes/LevelSelection.unity
-    guid: 4ff920e9074cec849a94a9ec7006bbf1
-  - enabled: 0
-    path: Assets/Scenes/Menu.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Settings.unity
-    guid: 6e4fe74d6fe1c694aa5a84e1d4aa2ebd
-  - enabled: 1
-    path: Assets/Scenes/OutfitSelector.unity
-    guid: f4dfd829485e47c44989d4cea0c5da15
-  - enabled: 0
-    path: Assets/Scenes/HowToPlay.unity
-    guid: bd6cd07400956f543bab1f1098963b02
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 8f6737df6993d5643af65606f222b367

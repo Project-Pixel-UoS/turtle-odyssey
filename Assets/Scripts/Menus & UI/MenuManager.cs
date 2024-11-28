@@ -11,9 +11,16 @@ using UnityEngine;
 /// </remarks>
 public class MenuManager : MonoBehaviour
 {
+    public bool IsSetLevelUnlocked;
+    public int LevelUnlocked;
+    public bool IsSetPearls;
+    public int totalPearls;
+
     public void Awake()
     {
-        PlayerPrefs.SetInt("levelUnlocked", 3);
+        if (IsSetLevelUnlocked) { PlayerPrefs.SetInt("levelUnlocked", LevelUnlocked); }
+        if (IsSetPearls) { PlayerPrefs.SetInt("PearlScore", totalPearls); }
+
         if (!PlayerPrefs.HasKey("levelUnlocked"))
         {
             PlayerPrefs.SetInt("levelUnlocked", 1);

@@ -15,7 +15,7 @@ public class OutfitUnlocker : MonoBehaviour
         {
             PlayerPrefs.SetInt("OutfitUnlockedFlags", 1);
         }
-        PlayerPrefs.SetInt("PearlScore", 5);
+        // PlayerPrefs.SetInt("PearlScore", 5);
         Debug.Log(PlayerPrefs.GetInt("OutfitUnlockedFlags"));
     }
     void Start()
