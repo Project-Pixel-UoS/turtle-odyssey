@@ -599,11 +599,11 @@ RectTransform:
   m_Father: {fileID: 1594447747}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 238.00008, y: -280}
-  m_SizeDelta: {x: 600, y: 50}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 754, y: -280}
+  m_SizeDelta: {x: 939.6, y: 50}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &435082205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -624,18 +624,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CODERS
+  m_text: 'PROGRAMMING
 
     Aashish Raja
 
-    Abdallah
+    Abdallah Kayed Ali Khorma
 
-    Iva Koleva
+    Iva
+    Koleva
 
     Manya Mittal
 
-    Olivia
-    Aurora'
+    Olivia Aurora'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1691,7 +1691,7 @@ RectTransform:
   m_GameObject: {fileID: 1149106001}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1.6}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 1.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1594447747}
@@ -1699,7 +1699,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 794.8, y: -518}
+  m_AnchoredPosition: {x: 801, y: -500}
   m_SizeDelta: {x: 1200, y: 377}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1149106003
@@ -1824,15 +1824,15 @@ RectTransform:
   m_GameObject: {fileID: 1150782600}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1.2}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1594447747}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 769, y: -290}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -65.79993, y: -230}
   m_SizeDelta: {x: 1500, y: 473}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1150782602
@@ -1964,7 +1964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 138.00008, y: -645}
+  m_AnchoredPosition: {x: 113.00007, y: -645}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1245489382
@@ -2608,7 +2608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -402, y: -280}
+  m_AnchoredPosition: {x: -427, y: -280}
   m_SizeDelta: {x: 700, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1602839132
@@ -2631,7 +2631,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'DESIGNERS
+  m_text: 'GAME DESIGN
 
     Adam Arif
 
@@ -2639,10 +2639,10 @@ MonoBehaviour:
 
     AlAnood Ibrahim SM Alriyami
 
-    Najaaz
-    Nabhan
+    Milan
+    Zeki
 
-    Milan Zeki'
+    Najaaz Nabhan'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3935,7 +3935,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -351.99988, y: -645}
+  m_AnchoredPosition: {x: -376.9999, y: -645}
   m_SizeDelta: {x: 800, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1989289920
