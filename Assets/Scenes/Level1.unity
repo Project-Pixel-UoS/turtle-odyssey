@@ -1484,22 +1484,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6323100234846412837, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
   m_PrefabInstance: {fileID: 2454099510262762444}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1585476219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585476208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CategoryHash: 0
-  m_labelHash: 0
-  m_SpriteKey: 0
-  m_SpriteHash: 0
 --- !u!1001 &1605456045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1931,10 +1915,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -1459724628964595951, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: MainCamera
-      value: 
-      objectReference: {fileID: 598815346}
     - target: {fileID: 6323100234846412837, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_Name
       value: Turtle
@@ -1983,25 +1963,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8154806306022438476, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: Finish
-      value: 
-      objectReference: {fileID: 723632958}
-    - target: {fileID: 8154806306022438476, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: gameOver
-      value: 
-      objectReference: {fileID: 278855869}
-    - target: {fileID: 8154806306022438476, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: wellDone
-      value: 
-      objectReference: {fileID: 723632958}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6323100234846412837, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1585476219}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
 --- !u!1001 &7568208386789759974
 PrefabInstance:

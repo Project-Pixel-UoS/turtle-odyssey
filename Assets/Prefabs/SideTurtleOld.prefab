@@ -39,41 +39,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -4609049065186802890, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -508234526723113, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
-      propertyPath: moveSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -508234526723113, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
-      propertyPath: turtleMoves
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1013714956303575999, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 21300000, guid: 8de16ba4c829ac649a8cd5ac82cc6eae, type: 3}
     - target: {fileID: 3844192648345379795, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: outfits.Array.data[0].outfit
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 3844192648345379795, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: outfits.Array.data[1].outfit
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 4425367552297056743, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4425367552297056743, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.42144588
-      objectReference: {fileID: 0}
-    - target: {fileID: 4425367552297056743, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.41450068
       objectReference: {fileID: 0}
     - target: {fileID: 4425367552297056743, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -117,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5385648477640621996, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_SpriteLibraryAsset
-      value: 
+      value:
       objectReference: {fileID: 7108339969198208228, guid: 298726b6f2f73dd40826865734de5ef6, type: 3}
     - target: {fileID: 5593286726715843130, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_Name
@@ -129,11 +109,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7340761409803925136, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_Controller
-      value: 
+      value:
       objectReference: {fileID: 9100000, guid: d5d0269b783bebb4981c931ede202814, type: 2}
     - target: {fileID: 8019041615132198951, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_Sprite
-      value: 
+      value:
       objectReference: {fileID: 0}
     - target: {fileID: 8019041615132198951, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -170,8 +150,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea604d712964a4268942290199c14416, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   bubblePrefab: {fileID: 4040392632284901541, guid: 335f160311e3048d18fcdb54b6785733, type: 3}
   firePoint: {fileID: 7620094938647307091}
   fireRate: 1

@@ -444,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3203719105509675804, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_Camera
-      value: 
+      value:
       objectReference: {fileID: 1376894012}
     - target: {fileID: 5349405344709725217, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_Pivot.x
@@ -544,7 +544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7219139814278015514, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
+      value:
       objectReference: {fileID: 1954797083923415630, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
     - target: {fileID: 7219139814278015514, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2367,7 +2367,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1459724628964595951, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: MainCamera
-      value: 
+      value:
       objectReference: {fileID: 1376894012}
     - target: {fileID: 5945816876152151081, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_Size.x
@@ -2433,10 +2433,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8154806306022438476, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: gameOver
-      value: 
-      objectReference: {fileID: 1654444159}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3423,15 +3419,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
       propertyPath: gameButtons
-      value: 
+      value:
       objectReference: {fileID: 229094238}
     - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
       propertyPath: WellDoneMenu
-      value: 
+      value:
       objectReference: {fileID: 229094239}
     - target: {fileID: 8857598164153847620, guid: 0161f487d9db8df47bcd1a805ccb87ca, type: 3}
       propertyPath: gameOverMenu
-      value: 
+      value:
       objectReference: {fileID: 1654444159}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -21,20 +21,6 @@ public class TurtleMovement : MonoBehaviour
     {
         float moveY = swipeDirection.y;
 
-        transform.Translate(0f, moveY * moveSpeed * Time.deltaTime, 0f);
+        transform.Translate(0f, moveY * moveSpeed, 0f);
     }
-
-    // private void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     if (collision.gameObject.name != "Powerups" && !GameManager.Instance.hasImmunity)
-    //     {
-    //         LevelOver();
-    //     }
-
-    // }
-
-    // void LevelOver()
-    // {
-    //     Time.timeScale = 0f;
-    // }
 }
