@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour
     public void Pause()
     {
         isGamePaused = true;
-        savedSpeed = moveSpeed;
+
         moveSpeed = 0;
     }
 
@@ -117,6 +117,7 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("levelUnlocked", levelNumber+1);
         }
+        gameActive = false;
         Debug.Log("new unlocked Level is " + PlayerPrefs.GetInt("levelUnlocked"));
         WellDoneMenu.SetActive(true);
         soundManager.PlaySfx(SoundManager.Sfx.WIN);

@@ -29,6 +29,7 @@ public class LevelSelectSwipeController : MonoBehaviour
     public GameObject nextBtn;
     public GameObject previousBtn;
     private Vector2 dragStart;
+    SoundManager soundManager;
     // Start is called before the first frame update
     void Awake()
     {   LevelMenuManager lMManager = GetComponent<LevelMenuManager>();
@@ -43,7 +44,9 @@ public class LevelSelectSwipeController : MonoBehaviour
     {
         maxPage = GetComponent<LevelMenuManager>().numberOfPages;
         DisableNavigationButtonsAtEachEnds();
-        MovePage();
+        GameObject camera = GameObject.FindGameObjectsWithTag("MainCamera")[0];
+        soundManager = camera.GetComponent<SoundManager>();
+        JumpPage();
     }
 
     public void Next()
@@ -81,6 +84,12 @@ public class LevelSelectSwipeController : MonoBehaviour
 
     // Update is called once per frame
     void MovePage()
+    {
+        levelPagesRect.LeanMoveLocal(targetPos, tweenTime).setEase(tweenType);
+        soundManager?.PlaySfx(SoundManager.Sfx.SWOOSH);
+    }
+
+    void JumpPage()
     {
         levelPagesRect.LeanMoveLocal(targetPos, tweenTime).setEase(tweenType);
     }

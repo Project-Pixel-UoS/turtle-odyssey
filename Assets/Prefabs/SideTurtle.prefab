@@ -292,8 +292,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7c0366b8d617d54092eb80b8cfd1e8c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   MainCamera: {fileID: 0}
 --- !u!114 &-4609049065186802890
 MonoBehaviour:
@@ -305,9 +305,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a52ddc03c373e8f4eb63962b02afe633, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   moveSpeed: 1
+  moveSound: 5
 --- !u!114 &5931534838366095370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,8 +319,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e2b40b44179348fc8cd08b51f0906ae, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   swipeThreshold: 80
 --- !u!114 &-508234526723113
 MonoBehaviour:
@@ -331,12 +332,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40abe42dc097abe4091b42bf26884c06, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  moveSpeed: 0
-  turtleMoves: 1
-  gameOver: {fileID: 0}
-  wellDone: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3844192648345379795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -347,8 +344,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03abedfcbc00a144ba68fbb1bda7f73b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   outfitRenderer: {fileID: 8019041615132198951}
   outfits:
   - name: Outfit1
@@ -391,7 +388,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0

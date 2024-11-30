@@ -52,7 +52,7 @@ public class MenuManager : MonoBehaviour
                 transition.TransitionOut();
             }
         }
-        soundManager.PlaySfx(SoundManager.Sfx.SWOOSH);
+        // soundManager.PlaySfx(SoundManager.Sfx.SWOOSH);
     }
 
     public void SwitchMenuWithResume(GameObject page)

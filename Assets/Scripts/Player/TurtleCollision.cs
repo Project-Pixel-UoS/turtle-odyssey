@@ -22,8 +22,8 @@ public class TurtleCollision : MonoBehaviour
         else if (collision.gameObject.CompareTag("Powerup"))
         {
             GameManager.Instance.BoostSpeed();
+            // GameManager.Instance.soundManager?.PlaySfx(SoundManager.Sfx.POWER_UP);
             Destroy(collision.gameObject);
-            GameManager.Instance.soundManager?.PlaySfx(SoundManager.Sfx.POWER_UP);
 
         }
 

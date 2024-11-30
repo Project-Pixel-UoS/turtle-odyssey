@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public enum Sfx { TOGGLE, FAIL, WIN, POWER_UP, SWOOSH };
+    public enum Sfx { TOGGLE, FAIL, WIN, POWER_UP, SWOOSH, BUBBLES };
     public AudioSource player;
     public AudioClip[] clips;
 
@@ -24,8 +24,6 @@ public class SoundManager : MonoBehaviour
     public void PlaySfx()
     {
         player.Play();
-
-
     }
 
     public void PlaySfx(Sfx sfx)

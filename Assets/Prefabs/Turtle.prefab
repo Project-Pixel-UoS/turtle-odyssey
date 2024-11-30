@@ -395,6 +395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  moveSound: 4
 --- !u!114 &5351825645159031818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,10 +421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40abe42dc097abe4091b42bf26884c06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  turtleMoves: 1
-  gameOver: {fileID: 0}
-  wellDone: {fileID: 0}
 --- !u!114 &-1459724628964595951
 MonoBehaviour:
   m_ObjectHideFlags: 0

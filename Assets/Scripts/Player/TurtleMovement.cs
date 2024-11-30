@@ -5,6 +5,7 @@ using UnityEngine;
 public class TurtleMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public SoundManager.Sfx moveSound = SoundManager.Sfx.SWOOSH;
 
     void Start()
     {
@@ -22,5 +23,6 @@ public class TurtleMovement : MonoBehaviour
         float moveY = swipeDirection.y;
 
         transform.Translate(0f, moveY * moveSpeed, 0f);
+        GameManager.Instance.soundManager?.PlaySfx(moveSound);
     }
 }
