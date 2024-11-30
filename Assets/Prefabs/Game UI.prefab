@@ -137,6 +137,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 030d83752f3a19545ad7a9b7e5f364a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsSetLevelUnlocked: 0
+  LevelUnlocked: 0
+  IsSetPearls: 0
+  totalPearls: 0
 --- !u!82 &7464783665812761080
 AudioSource:
   m_ObjectHideFlags: 0
