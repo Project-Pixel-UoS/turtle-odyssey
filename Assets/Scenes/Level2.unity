@@ -1103,18 +1103,6 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 263448713}
-    - target: {fileID: 278614097282082420, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 278614097282082420, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 357805445230587525, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: m_SortingOrder
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6323100234846412837, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_Name
       value: Turtle
@@ -1122,10 +1110,6 @@ PrefabInstance:
     - target: {fileID: 7584687376402018859, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7584687376402018859, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.34752
       objectReference: {fileID: 0}
     - target: {fileID: 7584687376402018859, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1166,18 +1150,6 @@ PrefabInstance:
     - target: {fileID: 7584687376402018859, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8154806306022438476, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: gameOver
-      value: 
-      objectReference: {fileID: 278855869}
-    - target: {fileID: 8154806306022438476, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: wellDone
-      value: 
-      objectReference: {fileID: 721888165}
-    - target: {fileID: 8154806306022438476, guid: 58a47ac1f4d593d479d7d2622bf96b07, type: 3}
-      propertyPath: turtleMoves
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
