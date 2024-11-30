@@ -53,18 +53,22 @@ public class Level2Operator : MonoBehaviour
             GameManager.Instance.BoostSpeed();
             turtleMoves = true;
             Destroy(collision.gameObject);
+            GameManager.Instance.soundManager?.PlaySfx(SoundManager.Sfx.POWER_UP);
+
         }
 
         else if (collision.gameObject.CompareTag("TornadoPowerup"))
         {
             turtleMoves = true;
             Destroy(collision.gameObject);
+            GameManager.Instance.soundManager.PlaySfx(SoundManager.Sfx.POWER_UP);
         }
 
         else if (collision.gameObject.name == "PearlPickup")
         {
             GameManager.Instance.UpdatePearlScore();
             Destroy(collision.gameObject);
+            GameManager.Instance.soundManager.PlaySfx(SoundManager.Sfx.POWER_UP);
         }
         else
         {

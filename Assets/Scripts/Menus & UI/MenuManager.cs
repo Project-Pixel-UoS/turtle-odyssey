@@ -15,6 +15,7 @@ public class MenuManager : MonoBehaviour
     public int LevelUnlocked;
     public bool IsSetPearls;
     public int totalPearls;
+    SoundManager soundManager;
 
     public void Awake()
     {
@@ -35,6 +36,8 @@ public class MenuManager : MonoBehaviour
         {
             SwitchMenu(GameObject.Find("LevelMenu"));
         }
+        GameObject camera = GameObject.FindGameObjectsWithTag("MainCamera")[0];
+        soundManager = camera.GetComponent<SoundManager>();
     }
 
     public void SwitchMenu(GameObject page)
@@ -49,6 +52,7 @@ public class MenuManager : MonoBehaviour
                 transition.TransitionOut();
             }
         }
+        soundManager.PlaySfx(SoundManager.Sfx.SWOOSH);
     }
 
     public void SwitchMenuWithResume(GameObject page)

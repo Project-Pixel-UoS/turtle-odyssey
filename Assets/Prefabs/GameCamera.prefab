@@ -107,6 +107,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 6567177159964590246}
+  clips:
+  - {fileID: 8300000, guid: 6067acec2eee68c45b7e0741533223b3, type: 3}
+  - {fileID: 8300000, guid: ece5a2139fc87f849bbb30029ddae860, type: 3}
+  - {fileID: 8300000, guid: d4b01e438ab5a4049bc35b769deb9b0e, type: 3}
+  - {fileID: 8300000, guid: 4be8278622dda3c4298959023571f5d1, type: 3}
+  - {fileID: 8300000, guid: fdb07911d14aa934bad8db788145ab2d, type: 3}
 --- !u!82 &6567177159964590246
 AudioSource:
   m_ObjectHideFlags: 0

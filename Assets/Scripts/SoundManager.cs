@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+    public enum Sfx { TOGGLE, FAIL, WIN, POWER_UP, SWOOSH };
     public AudioSource player;
+    public AudioClip[] clips;
 
     // Start is called before the first frame update
     void Start()
@@ -19,9 +21,17 @@ public class SoundManager : MonoBehaviour
     }
 
 
-    public void PlaySFx()
+    public void PlaySfx()
     {
         player.Play();
+
+
+    }
+
+    public void PlaySfx(Sfx sfx)
+    {
+        // player.clip = clips[(int)sfx];
+        player.PlayOneShot(clips[(int)sfx]);
 
 
     }
