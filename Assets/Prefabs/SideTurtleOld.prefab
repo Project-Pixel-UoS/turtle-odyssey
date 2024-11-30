@@ -127,6 +127,10 @@ PrefabInstance:
       propertyPath: swipeThreshold
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 7340761409803925136, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d5d0269b783bebb4981c931ede202814, type: 2}
     - target: {fileID: 8019041615132198951, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_Sprite
       value: 
