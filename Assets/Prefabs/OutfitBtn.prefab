@@ -299,7 +299,7 @@ MonoBehaviour:
   m_text: Unlock!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60f46e9bda250b04bbac5aa88caf6b69, type: 2}
-  m_sharedMaterial: {fileID: 463712474971586024, guid: 60f46e9bda250b04bbac5aa88caf6b69, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: d4ebe8e125bf0014c9811fcbd033da37, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -569,7 +569,7 @@ MonoBehaviour:
   m_text: Cost
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60f46e9bda250b04bbac5aa88caf6b69, type: 2}
-  m_sharedMaterial: {fileID: 463712474971586024, guid: 60f46e9bda250b04bbac5aa88caf6b69, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: d4ebe8e125bf0014c9811fcbd033da37, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
