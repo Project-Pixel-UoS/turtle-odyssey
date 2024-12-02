@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3480834771503028576}
   - component: {fileID: 253029917889853720}
   - component: {fileID: 2316535370793162293}
+  - component: {fileID: -4164185902054752520}
   m_Layer: 0
   m_Name: TornadoPowerup
-  m_TagString: Untagged
+  m_TagString: TornadoPowerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,3 +193,19 @@ PolygonCollider2D:
       - {x: -0.405, y: 0.715}
       - {x: -0.45499998, y: 0.745}
   m_UseDelaunayMesh: 0
+--- !u!114 &-4164185902054752520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8986336163961332848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  deadZone: -20
+  leftEdge: 0
+  width: 0

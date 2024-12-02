@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8368715314792302907}
   - component: {fileID: 4905152114279928793}
   - component: {fileID: 5700930434790849630}
+  - component: {fileID: -2699969838403988868}
   m_Layer: 0
   m_Name: SpeedPowerup
-  m_TagString: Untagged
+  m_TagString: Powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,3 +203,19 @@ PolygonCollider2D:
       - {x: 0.45999998, y: -2.54}
       - {x: 0.59999996, y: -2.51}
   m_UseDelaunayMesh: 0
+--- !u!114 &-2699969838403988868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4443905706384687220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  deadZone: -20
+  leftEdge: 0
+  width: 0

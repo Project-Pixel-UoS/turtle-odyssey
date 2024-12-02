@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 1152988167584443953}
   m_Layer: 5
   m_Name: MainMenuButton (1)
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -593,7 +593,7 @@ GameObject:
   - component: {fileID: 2809888699005156770}
   m_Layer: 5
   m_Name: ReplayButton
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1968,7 +1968,7 @@ GameObject:
   - component: {fileID: 8001713138897684377}
   m_Layer: 5
   m_Name: MainMenuButton
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

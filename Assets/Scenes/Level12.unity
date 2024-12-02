@@ -1045,27 +1045,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2672683066919543842, guid: bc147b494d1b865418404428fd5ccafc, type: 3}
   m_PrefabInstance: {fileID: 7568208386789759974}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &279325727 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4443905706384687220, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-  m_PrefabInstance: {fileID: 557932316}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &279325730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279325727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &314137846
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1596,21 +1575,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerups
       objectReference: {fileID: 0}
-    - target: {fileID: 4443905706384687220, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      propertyPath: m_TagString
-      value: Powerup
-      objectReference: {fileID: 0}
     - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.67411935
       objectReference: {fileID: 0}
     - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1652,14 +1619,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3304571963586431709, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4443905706384687220, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 279325730}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
 --- !u!1001 &563495051
 PrefabInstance:
@@ -2563,14 +2526,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3925451593683724284, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 3925451593683724284, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 3925451593683724284, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 182.9
       objectReference: {fileID: 0}
@@ -2614,40 +2569,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerups
       objectReference: {fileID: 0}
-    - target: {fileID: 8986336163961332848, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      propertyPath: m_TagString
-      value: TornadoPowerup
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3304571963586431709, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8986336163961332848, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 905002748}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
---- !u!1 &905002747 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8986336163961332848, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-  m_PrefabInstance: {fileID: 905002746}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &905002748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905002747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &908377561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3035,21 +2961,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerups
       objectReference: {fileID: 0}
-    - target: {fileID: 4443905706384687220, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      propertyPath: m_TagString
-      value: Powerup
-      objectReference: {fileID: 0}
     - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3091,36 +3005,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3304571963586431709, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4443905706384687220, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1012887152}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
---- !u!1 &1012887151 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4443905706384687220, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-  m_PrefabInstance: {fileID: 1012887149}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1012887152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1012887151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &1019895806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3499,14 +3388,6 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3925451593683724284, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 3925451593683724284, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 3925451593683724284, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 63.46
       objectReference: {fileID: 0}
@@ -3550,40 +3431,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerups
       objectReference: {fileID: 0}
-    - target: {fileID: 8986336163961332848, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      propertyPath: m_TagString
-      value: TornadoPowerup
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3304571963586431709, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8986336163961332848, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1145111553}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
---- !u!1 &1145111552 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8986336163961332848, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-  m_PrefabInstance: {fileID: 1145111551}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1145111553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145111552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &1159170975
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4411,21 +4263,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerups
       objectReference: {fileID: 0}
-    - target: {fileID: 4443905706384687220, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      propertyPath: m_TagString
-      value: Powerup
-      objectReference: {fileID: 0}
     - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 8368715314792302907, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4467,36 +4307,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3304571963586431709, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4443905706384687220, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1708149215}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
---- !u!1 &1708149214 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4443905706384687220, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
-  m_PrefabInstance: {fileID: 1708149213}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1708149215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708149214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!4 &1737059590 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3439615067591801358, guid: 36c7a0c5457550a409ea6b4314adf0d7, type: 3}
@@ -4513,14 +4328,6 @@ PrefabInstance:
     - target: {fileID: 3925451593683724284, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
       propertyPath: m_RootOrder
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 3925451593683724284, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 3925451593683724284, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 3925451593683724284, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4566,40 +4373,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Powerups
       objectReference: {fileID: 0}
-    - target: {fileID: 8986336163961332848, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      propertyPath: m_TagString
-      value: TornadoPowerup
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3304571963586431709, guid: 99b161bb39bc5ea4ca8315ac2b250a02, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8986336163961332848, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1744302403}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
---- !u!1 &1744302402 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8986336163961332848, guid: 1ac5f3444b0704785b55d9c531dea4c2, type: 3}
-  m_PrefabInstance: {fileID: 1744302401}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1744302403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744302402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15c002c8842af8f4bbb1d284e761589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
-  deadZone: -20
-  leftEdge: 0
-  width: 0
 --- !u!1001 &1774765547
 PrefabInstance:
   m_ObjectHideFlags: 0

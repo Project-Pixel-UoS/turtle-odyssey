@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverMenu;
     public GameObject WellDoneMenu;
     public PearlScoreUI pearlScoreUI;
+    SoundManager _soundManager;
     [Header("Game state")]
     public float moveSpeed;
     public float boostedSpeed;
@@ -44,6 +45,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public SoundManager soundManager
+    {
+        get { return _soundManager; }
+    }
+
     void Awake()
     {
         if (_instance is not null)
@@ -61,6 +67,9 @@ public class GameManager : MonoBehaviour
         pearlScore = PlayerPrefs.GetInt("PearlScore");
         pearlScoreUI = GameObject.Find("PearlScore").GetComponent<PearlScoreUI>();
         pearlScoreUI.UpdateScore(pearlScore);
+
+        GameObject camera = GameObject.FindGameObjectsWithTag("MainCamera")[0];
+        _soundManager = camera.GetComponent<SoundManager>();
     }
 
     public void GameOver()
@@ -69,15 +78,14 @@ public class GameManager : MonoBehaviour
         gameActive = false;
         gameOverMenu.SetActive(true);
         gameButtons.SetActive(false);
+        _soundManager.PlaySfx(SoundManager.Sfx.FAIL);
         Pause();
-
-        // Time.timeScale = 0f;
     }
 
     public void Pause()
     {
         isGamePaused = true;
-        savedSpeed = moveSpeed;
+
         moveSpeed = 0;
     }
 
@@ -109,8 +117,10 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("levelUnlocked", levelNumber+1);
         }
+        gameActive = false;
         Debug.Log("new unlocked Level is " + PlayerPrefs.GetInt("levelUnlocked"));
         WellDoneMenu.SetActive(true);
+        soundManager.PlaySfx(SoundManager.Sfx.WIN);
         Pause();
         PlayerPrefs.SetInt("PearlScore", pearlScore);
     }

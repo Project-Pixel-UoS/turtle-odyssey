@@ -39,18 +39,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -4609049065186802890, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -508234526723113, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
-      propertyPath: moveSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -508234526723113, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
-      propertyPath: turtleMoves
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1013714956303575999, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -66,14 +54,6 @@ PrefabInstance:
     - target: {fileID: 4425367552297056743, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4425367552297056743, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.42144588
-      objectReference: {fileID: 0}
-    - target: {fileID: 4425367552297056743, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.41450068
       objectReference: {fileID: 0}
     - target: {fileID: 4425367552297056743, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -127,6 +107,10 @@ PrefabInstance:
       propertyPath: swipeThreshold
       value: 80
       objectReference: {fileID: 0}
+    - target: {fileID: 7340761409803925136, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d5d0269b783bebb4981c931ede202814, type: 2}
     - target: {fileID: 8019041615132198951, guid: 1411c5bc84d01154e822515a6b3dd71f, type: 3}
       propertyPath: m_Sprite
       value: 

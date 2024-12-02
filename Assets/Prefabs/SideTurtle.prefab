@@ -16,9 +16,8 @@ GameObject:
   - component: {fileID: -4609049065186802890}
   - component: {fileID: 5931534838366095370}
   - component: {fileID: -508234526723113}
-  - component: {fileID: 3062784002978246124}
-  - component: {fileID: 5385648477640621996}
   - component: {fileID: 3844192648345379795}
+  - component: {fileID: 7340761409803925136}
   m_Layer: 0
   m_Name: SideTurtle
   m_TagString: Untagged
@@ -35,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 5593286726715843130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.42144588, y: 0.4214459, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 314172600504452164}
@@ -308,7 +307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52ddc03c373e8f4eb63962b02afe633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 1
+  moveSound: 5
 --- !u!114 &5931534838366095370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,40 +334,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40abe42dc097abe4091b42bf26884c06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
-  turtleMoves: 1
-  gameOver: {fileID: 0}
-  wellDone: {fileID: 0}
---- !u!114 &3062784002978246124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5593286726715843130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CategoryHash: 1.0562125e-36
-  m_labelHash: 0.86708885
-  m_SpriteKey: 0
-  m_SpriteHash: 201410165
---- !u!114 &5385648477640621996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5593286726715843130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Library: []
-  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 67ce3aec17df2a44e9ec85867440987b, type: 3}
 --- !u!114 &3844192648345379795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -406,6 +372,27 @@ MonoBehaviour:
     display: {fileID: 21300000, guid: 84d129916f181f34f9237d7a9ae39a9e, type: 3}
     outfit: {fileID: 21300000, guid: 169221752143cb7478095ac67a88c054, type: 3}
     cost: 0
+--- !u!95 &7340761409803925136
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5593286726715843130}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 175cf2bf0be392f45aae26cc9845e936, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8823781924180701111
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +466,7 @@ SpriteRenderer:
   m_SortingLayerID: -1815494045
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 169221752143cb7478095ac67a88c054, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -487,6 +474,6 @@ SpriteRenderer:
   m_Size: {x: 5, y: 4.89}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
