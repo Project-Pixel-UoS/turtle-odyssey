@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     [Header("Game state")]
     public float moveSpeed;
     public float boostedSpeed;
+    public float reducedSpeed;
     private float savedSpeed;
     public int pearlScore = 0;
     public bool hasImmunity = false;
@@ -94,7 +95,11 @@ public class GameManager : MonoBehaviour
         isGamePaused = false;
         moveSpeed = savedSpeed;
     }
-
+    public void SlowSpeed()
+    {
+        moveSpeed = reducedSpeed;
+        StartCoroutine(ResetSpeedAfterDelay(3f)); // 5 seconds reduced duration
+    }
     public void BoostSpeed()
     {
         moveSpeed = boostedSpeed;

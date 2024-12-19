@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TornadoPowerup : MonoBehaviour
 {
-    private GameObject closestKelpLeaf;
+    public GameObject closestKelpLeaf;
 
     private void Start()
     {
@@ -47,11 +47,11 @@ public class TornadoPowerup : MonoBehaviour
     private void ActivateTornadoPowerup()
     {
         // Destroy only the closest kelp leaf
-        print(closestKelpLeaf + "/before");
+        Debug.Log(closestKelpLeaf + "/before");
         if (closestKelpLeaf != null)
         {
             Destroy(closestKelpLeaf);
-            print(closestKelpLeaf + "/after");
+            Debug.Log(closestKelpLeaf + "/after");
         }
 
         // Destroy the powerup after it’s been used

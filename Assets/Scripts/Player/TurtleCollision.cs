@@ -33,6 +33,12 @@ public class TurtleCollision : MonoBehaviour
             GameManager.Instance.soundManager.PlaySfx(SoundManager.Sfx.POWER_UP);
         }
 
+        else if (collision.gameObject.CompareTag("Kelp"))
+        {
+            GameManager.Instance.SlowSpeed();
+            //turtleMoves = true;
+        }
+
         else if (collision.gameObject.name == "PearlPickup")
         {
             GameManager.Instance.UpdatePearlScore();
